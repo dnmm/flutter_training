@@ -40,8 +40,8 @@ class RObuttontext extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
-                    MaterialButton(
-                      splashColor: Colors.green,
+                    ElevatedButton(
+                      //splashColor: Colors.green,
                       onPressed: () {},
                       child: const Text(
                         "material button",
@@ -57,6 +57,7 @@ class RObuttontext extends StatelessWidget {
                         "material button",
                         style: TextStyle(
                           fontSize: 20.0,
+                          color: Colors.red,
                         ),
                       ),
                     ),
