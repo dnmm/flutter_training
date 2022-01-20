@@ -1,19 +1,28 @@
 import 'package:flutter/material.dart';
 
+// import 'dnm/dnm_main.dart';
+
 void main() {
-  runApp(const MaterialApp(
-      title: "MyApp",
+  // note - please comment below line and write your run app name
+  // runApp(const DnmMainMyApp());
+  runApp(const MainMyApp());
+}
+
+class MainMyApp extends StatelessWidget {
+  const MainMyApp({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Welcome to Flutter App',
       home: Scaffold(
         appBar: AppBar(
-          title: Text("MyApp"),
+          title: const Text('Welcome to Flutter'),
         ),
-        body: Material(
-          color: Colors.blue,
-          child: Center(
-            child: Text(
-              "hello world",
-            ),
-          ),
+        body: const Center(
+          child: Text('Hello World'),
         ),
-      )));
+      ),
+    );
+  }
 }
