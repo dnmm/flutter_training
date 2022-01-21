@@ -4,10 +4,6 @@
 
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const Tstyle());
-}
-
 class Tstyle extends StatelessWidget {
   const Tstyle({Key? key}) : super(key: key);
 

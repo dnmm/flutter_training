@@ -4,10 +4,6 @@
 
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const Stext());
-}
-
 class Stext extends StatelessWidget {
   const Stext({Key? key}) : super(key: key);
 
