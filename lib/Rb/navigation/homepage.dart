@@ -3,18 +3,14 @@ import 'package:flutter/material.dart';
 import 'firstpage.dart';
 import 'secoundpage.dart';
 
-void main() {
-  runApp(const MyApp());
-}
-
-class MyApp extends StatefulWidget {
-  const MyApp({Key? key}) : super(key: key);
+class Navigation extends StatefulWidget {
+  const Navigation({Key? key}) : super(key: key);
 
   @override
-  _MyAppState createState() => _MyAppState();
+  _NavigationState createState() => _NavigationState();
 }
 
-class _MyAppState extends State<MyApp> {
+class _NavigationState extends State<Navigation> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
