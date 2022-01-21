@@ -4,10 +4,6 @@
 
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const Textbutt());
-}
-
 class Textbutt extends StatelessWidget {
   const Textbutt({Key? key}) : super(key: key);
 

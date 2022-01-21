@@ -4,10 +4,6 @@
 
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const Twigetaline());
-}
-
 class Twigetaline extends StatelessWidget {
   const Twigetaline({Key? key}) : super(key: key);
 

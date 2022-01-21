@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const RObuttontext());
-}
-
 class RObuttontext extends StatelessWidget {
   const RObuttontext({Key? key}) : super(key: key);
 

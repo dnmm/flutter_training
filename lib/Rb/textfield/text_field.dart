@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
 //import 'package:flutter_training/Rb/button1.dart';
 
-void main() {
-  runApp(const Textfilds());
-}
-
 class Textfilds extends StatelessWidget {
   const Textfilds({Key? key}) : super(key: key);
 

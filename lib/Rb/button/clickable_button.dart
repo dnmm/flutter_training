@@ -4,10 +4,6 @@
 
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const Firstbuto());
-}
-
 class Firstbuto extends StatelessWidget {
   const Firstbuto({Key? key}) : super(key: key);
 

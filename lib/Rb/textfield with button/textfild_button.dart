@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(const Buttwithtext());
-
 class Buttwithtext extends StatelessWidget {
   const Buttwithtext({Key? key}) : super(key: key);
 
@@ -49,6 +47,10 @@ class MyCustomForm extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 190, vertical: 16),
           child: ElevatedButton(
+            //button backgroun color amber
+            style: ElevatedButton.styleFrom(
+              primary: Colors.amber,
+            ),
             onPressed: () {},
             child: const Text('click me'),
           ),

@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const RObutton());
-}
-
 class RObutton extends StatelessWidget {
   const RObutton({Key? key}) : super(key: key);
 

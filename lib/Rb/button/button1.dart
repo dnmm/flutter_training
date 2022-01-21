@@ -4,10 +4,6 @@
 
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const Firsttextbtu());
-}
-
 class Firsttextbtu extends StatelessWidget {
   const Firsttextbtu({Key? key}) : super(key: key);
 

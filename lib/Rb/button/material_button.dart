@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const Materialbuto());
-}
-
 class Materialbuto extends StatelessWidget {
   const Materialbuto({Key? key}) : super(key: key);
 
