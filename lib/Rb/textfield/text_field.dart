@@ -7,7 +7,7 @@ class Textfilds extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "rb infotech",
+      title: "flutter testing page",
       theme: ThemeData(
         primarySwatch: Colors.red,
       ),
@@ -29,7 +29,7 @@ class _MyhomepageState extends State<Myhomepage> {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          "Rb infotech ",
+          "flutter testing page ",
           style: TextStyle(
             fontSize: 20.0,
           ),

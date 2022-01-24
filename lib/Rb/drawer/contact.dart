@@ -7,7 +7,7 @@ class Contactpage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const appTitle = 'rb infotech pvt';
+    const appTitle = 'flutter testing page';
     return MaterialApp(
       title: appTitle,
       home: Scaffold(

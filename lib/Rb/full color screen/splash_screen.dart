@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.red,
       ),
-      title: "rb",
+      title: "flutter testing page",
       home: const Homepage(),
     );
   }

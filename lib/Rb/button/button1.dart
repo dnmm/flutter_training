@@ -10,14 +10,14 @@ class Firsttextbtu extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Welcome to rbinfotech.com',
+      title: 'Welcome to flutter',
       theme: ThemeData(
         primarySwatch: Colors.red,
       ),
       home: Scaffold(
         appBar: AppBar(
           title: const Text(
-            'rb infotech pvt',
+            'flutter testing page',
             style: TextStyle(
               fontSize: 20.0,
               color: Colors.yellow,

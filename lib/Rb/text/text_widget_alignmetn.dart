@@ -10,14 +10,14 @@ class Twigetaline extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Welcome to rbinfotech.com',
+      title: 'Welcome to flutter testing page',
       theme: ThemeData(
         primarySwatch: Colors.red,
       ),
       home: Scaffold(
         appBar: AppBar(
           title: const Text(
-            'rb infotech pvt',
+            'flutter testing page',
             style: TextStyle(
               fontSize: 20.0,
               color: Colors.yellow,
@@ -26,7 +26,7 @@ class Twigetaline extends StatelessWidget {
         ),
         body: const Center(
           child: Text(
-            "rb  infotech private limited first program",
+            "flutter testing page private limited first program",
             style: TextStyle(
               fontSize: 40.0,
             ),

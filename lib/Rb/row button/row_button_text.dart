@@ -31,7 +31,7 @@ class RObuttontext extends StatelessWidget {
               ),
               Padding(
                 padding: const EdgeInsets.all(
-                  20.0,
+                  50.0,
                 ),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,

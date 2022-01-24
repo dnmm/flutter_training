@@ -18,10 +18,10 @@ class _MydrawerState extends State<Mydrawer> {
         children: <Widget>[
           UserAccountsDrawerHeader(
             accountName: const Text(
-              "Rb infotech pvt",
+              "flutter testing page",
             ),
             accountEmail: const Text(
-              "707mauryaji@gmail.com",
+              "707abcd@gmail.com",
             ),
             currentAccountPicture: const CircleAvatar(
               child: Text(

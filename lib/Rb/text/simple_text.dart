@@ -10,13 +10,13 @@ class Stext extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Welcome to rbinfotech.com',
+      title: 'flutter testing page',
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('rb infotech pvt'),
+          title: const Text('flutter testing page'),
         ),
         body: const Center(
-          child: Text('rb infotech first program'),
+          child: Text('flutter testing page first program'),
         ),
       ),
     );
