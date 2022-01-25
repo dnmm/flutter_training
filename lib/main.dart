@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_training/Rb/navigation/homepage.dart';
+
+import 'dnm/Row and Column/row.dart';
 
 // import 'dnm/dnm_main.dart';
 
 void main() {
   // note - please comment below line and write your run app name
-  // runApp(const DnmMainMyApp());
-  runApp(const Navigation());
+//runApp(const MainMyApp());0
+
+  runApp(const MyMultipleRow());
 }
 
 class MainMyApp extends StatelessWidget {
