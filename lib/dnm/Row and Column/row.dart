@@ -8,7 +8,7 @@ class MyMultipleRow extends StatelessWidget {
     return MaterialApp(
       title: "Multiple Row",
       theme: ThemeData(
-        primarySwatch: Colors.red,
+        primarySwatch: Colors.blue,
       ),
       home: Scaffold(
         appBar: AppBar(
@@ -23,15 +23,15 @@ class MyMultipleRow extends StatelessWidget {
               const Padding(
                 padding: EdgeInsets.all(20.0),
                 child: Text(
-                  "this is a simpe text",
+                  "First Line With Text",
                   style: TextStyle(
-                    fontSize: 24.0,
+                    fontSize: 16.0,
                   ),
                 ),
               ),
               Padding(
                 padding: const EdgeInsets.all(
-                  50.0,
+                  16.0,
                 ),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -40,9 +40,9 @@ class MyMultipleRow extends StatelessWidget {
                       //splashColor: Colors.green,
                       onPressed: () {},
                       child: const Text(
-                        "material button",
+                        "This is Elevated Button",
                         style: TextStyle(
-                          fontSize: 20.0,
+                          fontSize: 16.0,
                         ),
                       ),
                     ),
@@ -50,9 +50,9 @@ class MyMultipleRow extends StatelessWidget {
                       splashColor: Colors.green,
                       onPressed: () {},
                       child: const Text(
-                        "material button",
+                        "This is Material Button",
                         style: TextStyle(
-                          fontSize: 20.0,
+                          fontSize: 16.0,
                           color: Colors.red,
                         ),
                       ),
@@ -63,7 +63,7 @@ class MyMultipleRow extends StatelessWidget {
               TextButton(
                 onPressed: () {},
                 child: const Text(
-                  "like us",
+                  "This is Text Button",
                   style: TextStyle(
                     fontSize: 20.0,
                   ),
