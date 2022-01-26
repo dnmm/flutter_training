@@ -40,9 +40,9 @@ class RObuttontext extends StatelessWidget {
                       //splashColor: Colors.green,
                       onPressed: () {},
                       child: const Text(
-                        "material button",
+                        "elevated button",
                         style: TextStyle(
-                          fontSize: 20.0,
+                          fontSize: 15.0,
                         ),
                       ),
                     ),
@@ -50,10 +50,21 @@ class RObuttontext extends StatelessWidget {
                       splashColor: Colors.green,
                       onPressed: () {},
                       child: const Text(
-                        "material button",
+                        "material button1",
                         style: TextStyle(
-                          fontSize: 20.0,
+                          fontSize: 15.0,
                           color: Colors.red,
+                        ),
+                      ),
+                    ),
+                    MaterialButton(
+                      splashColor: Colors.yellow,
+                      onPressed: () {},
+                      child: const Text(
+                        "material button2",
+                        style: TextStyle(
+                          fontSize: 15.0,
+                          color: Colors.blue,
                         ),
                       ),
                     ),
@@ -63,9 +74,9 @@ class RObuttontext extends StatelessWidget {
               TextButton(
                 onPressed: () {},
                 child: const Text(
-                  "like us",
+                  "feedback",
                   style: TextStyle(
-                    fontSize: 20.0,
+                    fontSize: 15.0,
                   ),
                 ),
               )

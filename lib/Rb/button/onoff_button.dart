@@ -43,10 +43,10 @@ class _MyhomepageState extends State<Myhomepage> {
             padding: const EdgeInsets.symmetric(horizontal: 190, vertical: 16),
             child: ElevatedButton(
               onPressed: () => setState(() => _flag = !_flag),
-              child: Text(_flag ? 'on' : 'off'),
+              child: Text(_flag ? 'sell' : 'cancel'),
               style: ElevatedButton.styleFrom(
                 primary:
-                    _flag ? Colors.red : Colors.teal, // This is what you need!
+                    _flag ? Colors.teal : Colors.red, // This is what you need!
               ),
             ),
           ),

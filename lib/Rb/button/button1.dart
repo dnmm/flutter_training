@@ -25,14 +25,19 @@ class Firsttextbtu extends StatelessWidget {
           ),
         ),
         body: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          // mainAxisAlignment: MainAxisAlignment.start,
+          //mainaxisaligment mai varticaly move hota hai
+          //mainAxisAlignment: MainAxisAlignment.center,
+          //mainAxisAlignment: MainAxisAlignment.start,
           //mainAxisAlignment: MainAxisAlignment.end,
           //mainAxisAlignment: MainAxisAlignment.spaceAround,
-          // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
 
+          //cross axialignment mai horizontical move hota hai
           //crossAxisAlignment: CrossAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.center,
+          //crossAxisAlignment: CrossAxisAlignment.end,
+
+          //strach matlab column span hoga pura screen mai center mai jaiyaiga
           //crossAxisAlignment: CrossAxisAlignment.stretch,
 
           children: <Widget>[

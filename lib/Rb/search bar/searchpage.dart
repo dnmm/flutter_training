@@ -10,7 +10,7 @@ class Searchpage extends StatelessWidget {
       //remove debug form app bar
       //app bar ka debug smymle ko remove karna
       debugShowCheckedModeBanner: false,
-      title: "rb infotech",
+      title: "flutter",
       theme: ThemeData(
         primarySwatch: Colors.red,
       ),

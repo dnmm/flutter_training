@@ -26,9 +26,6 @@ class Firstbuto extends StatelessWidget {
         ),
         body: Center(
           child: ElevatedButton(
-            // focusColor: Colors.red,
-            // hoverColor: Colors.green,
-            // splashColor: Colors.blue,
             onPressed: () {},
             child: const Text('click me'),
           ),

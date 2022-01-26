@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-//import 'package:flutter_training/Rb/firstscreen.dart';
 import 'firstpage.dart';
 import 'secoundpage.dart';
 
@@ -14,10 +13,10 @@ class _NavigationState extends State<Navigation> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      routes: {
-        '/first': (context) => const Firstpage(),
-        '/secound': (context) => const Secoundscreen(),
-      },
+      // routes: {
+      //   '/first': (context) => const Firstpage(),
+      //   '/secound': (context) => const Secoundscreen(),
+      // },
       title: "navigation",
       theme: ThemeData(
         primarySwatch: Colors.blue,

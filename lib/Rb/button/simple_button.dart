@@ -30,7 +30,7 @@ class Sbutton extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(200.0),
               child: MaterialButton(
-                //color: Colors.red,
+                color: Colors.red[50],
                 splashColor: Colors.cyan,
                 onPressed: () {},
                 //we show here in child whitch is display
