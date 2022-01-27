@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class MyRowWtithMultipleText extends StatelessWidget {
-  const MyRowWtithMultipleText({Key? key}) : super(key: key);
+class MyColumnWtithMultipleText extends StatelessWidget {
+  const MyColumnWtithMultipleText({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +18,7 @@ class MyRowWtithMultipleText extends StatelessWidget {
         ),
         body: Column(
           children: [
-            Row(
+            Column(
               children: [
                 Center(
                     child: Wrap(
@@ -31,7 +31,7 @@ class MyRowWtithMultipleText extends StatelessWidget {
                 )),
               ],
             ),
-            Row(
+            Column(
               children: [
                 Center(
                     child: Wrap(

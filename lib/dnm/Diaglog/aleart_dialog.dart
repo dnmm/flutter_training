@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class DiaglogSimple extends StatelessWidget {
-  const DiaglogSimple({Key? key}) : super(key: key);
+class AleartDiaglogSimple extends StatelessWidget {
+  const AleartDiaglogSimple({Key? key}) : super(key: key);
 
   static const String _title = 'Flutter Code Sample';
 
