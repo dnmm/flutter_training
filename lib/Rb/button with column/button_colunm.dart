@@ -42,7 +42,7 @@ class Textbutt extends StatelessWidget {
                     const EdgeInsets.symmetric(horizontal: 140, vertical: 3.2),
                 child: MaterialButton(
                   splashColor: Colors.cyan,
-                  padding: const EdgeInsets.all(10.0),
+                  padding: const EdgeInsets.all(30.0),
                   onPressed: () {},
                   child: const Text(
                     "TEXT BUTTON 1",

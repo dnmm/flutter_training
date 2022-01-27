@@ -28,10 +28,10 @@ class _HomepageState extends State<Homepage> {
     return Scaffold(
       backgroundColor: Colors.red,
       body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
+        // mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           Row(
-            mainAxisAlignment: MainAxisAlignment.center,
+            //mainAxisAlignment: MainAxisAlignment.center,
             children: const <Widget>[
               /* CircularProgressIndicator(
                 backgroundColor: Colors.white,

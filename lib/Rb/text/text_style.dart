@@ -28,7 +28,7 @@ class Tstyle extends StatelessWidget {
           child: Text(
             "flutter testing page private limited \n first program",
             style: TextStyle(
-              color: Colors.red,
+              color: Colors.blue,
               fontSize: 20.0,
               fontStyle: FontStyle.italic,
               fontWeight: FontWeight.bold,

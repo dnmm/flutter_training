@@ -34,7 +34,7 @@ class Firsttextbtu extends StatelessWidget {
 
           //cross axialignment mai horizontical move hota hai
           //crossAxisAlignment: CrossAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.center,
+          //crossAxisAlignment: CrossAxisAlignment.center,
           //crossAxisAlignment: CrossAxisAlignment.end,
 
           //strach matlab column span hoga pura screen mai center mai jaiyaiga

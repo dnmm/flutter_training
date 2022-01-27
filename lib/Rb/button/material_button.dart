@@ -17,26 +17,48 @@ class Materialbuto extends StatelessWidget {
           ),
         ),
         body: Center(
-          child: MaterialButton(
-            color: Colors.red[400],
-            splashColor: Colors.green,
-            //highlightColor: Colors.yellow,
-            height: 40.0,
-            minWidth: 200.0,
-            onPressed: () {},
-            child: const Text(
-              "material button",
-              style: TextStyle(
-                fontSize: 20.0,
-                color: Colors.white,
+            child: Column(
+          children: <Widget>[
+            MaterialButton(
+              color: Colors.red[400],
+              splashColor: Colors.yellow,
+              //highlightColor: Colors.yellow,
+              height: 40.0,
+              minWidth: 200.0,
+              onPressed: () {},
+              child: const Text(
+                "submit",
+                style: TextStyle(
+                  fontSize: 20.0,
+                  color: Colors.white,
+                ),
               ),
-            ),
-            /*shape: RoundedRectangleBorder(
+              /*shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(15.0),
              */
-            shape: Border.all(color: Colors.black, width: 3.0),
-          ),
-        ),
+              shape: Border.all(color: Colors.black, width: 3.0),
+            ),
+            MaterialButton(
+              color: Colors.red[400],
+              splashColor: Colors.yellow,
+              //highlightColor: Colors.yellow,
+              height: 40.0,
+              minWidth: 200.0,
+              onPressed: () {},
+              child: const Text(
+                "submit",
+                style: TextStyle(
+                  fontSize: 20.0,
+                  color: Colors.white,
+                ),
+              ),
+              /*shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(15.0),
+             */
+              shape: Border.all(color: Colors.black, width: 3.0),
+            ),
+          ],
+        )),
       ),
     );
   }
