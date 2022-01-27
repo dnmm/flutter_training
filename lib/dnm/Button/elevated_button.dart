@@ -5,23 +5,30 @@ class MyElevatedButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var spacing2 = 20.0;
+    var spacing = 10.0;
     return MaterialApp(
         title: 'Welcome to Text Button',
         home: Scaffold(
           appBar: AppBar(
-            title: const Text('Welcome to text'),
+            title: const Text('Welcome to Elevated Button'),
           ),
-          body: Wrap(
-            direction: Axis.vertical,
-            spacing: spacing2,
-            children: [
-              const Text("Text Here 1"),
-              ElevatedButton(
-                onPressed: () {},
-                child: const Text('Enabled'),
-              ),
-            ],
+          body: Center(
+            child: Wrap(
+              // us can use horizontal or vertical
+              direction: Axis.vertical,
+              spacing: spacing,
+              children: [
+                const Text("Text Here 1"),
+                ElevatedButton(
+                  onPressed: () {},
+                  child: const Text('Login'),
+                ),
+                ElevatedButton(
+                  onPressed: () {},
+                  child: const Text('Signup'),
+                ),
+              ],
+            ),
           ),
         ));
   }
