@@ -2,9 +2,7 @@
 
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(
-    MaterialApp(
+void main() => runApp(MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "My App",
       home: Scaffold(
@@ -21,4 +19,3 @@ void main() {
           ),
         ),
       )));
-}
