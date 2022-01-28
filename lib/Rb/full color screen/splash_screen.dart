@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+class Splashc extends StatelessWidget {
+  const Splashc({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -10,19 +10,19 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.red,
       ),
       title: "flutter testing page",
-      home: const Homepage(),
+      home: const Splhomepage(),
     );
   }
 }
 
-class Homepage extends StatefulWidget {
-  const Homepage({Key? key}) : super(key: key);
+class Splhomepage extends StatefulWidget {
+  const Splhomepage({Key? key}) : super(key: key);
 
   @override
-  _HomepageState createState() => _HomepageState();
+  _SplhomepageState createState() => _SplhomepageState();
 }
 
-class _HomepageState extends State<Homepage> {
+class _SplhomepageState extends State<Splhomepage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
