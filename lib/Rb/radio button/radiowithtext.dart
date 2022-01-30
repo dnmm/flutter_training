@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class Radiowithtext extends StatelessWidget {
   const Radiowithtext({Key? key}) : super(key: key);
 
-  static const String _title = 'Flutter Code Sample';
+  static const String _title = 'Radio button';
 
   @override
   Widget build(BuildContext context) {
@@ -50,7 +50,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
               padding: const EdgeInsets.all(8.0),
               child: ListTile(
                 title: const Text('male'),
-                leading: Radio<SingingCharacter>(
+                leading: Radio(
                   value: SingingCharacter.male,
                   groupValue: _character,
                   onChanged: (SingingCharacter? value) {

@@ -19,7 +19,7 @@ class StateExample extends StatefulWidget {
   _StateExampleState createState() => _StateExampleState();
 }
 
-enum colors { red, green, blue }
+enum colors { green, blue }
 
 class _StateExampleState extends State<StateExample> {
   colors _color = colors.green;
@@ -28,7 +28,7 @@ class _StateExampleState extends State<StateExample> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xFFF5F5F5),
-      appBar: AppBar(title: const Text("flutter")),
+      appBar: AppBar(title: const Text("Radio button")),
       body: Row(
         children: [
           const SizedBox(
@@ -62,9 +62,9 @@ class _StateExampleState extends State<StateExample> {
           Flexible(
             child: ListTile(
               title: const Text("Green"),
-              //tileColor: Colors.pink[100],
-              horizontalTitleGap: 0,
-              leading: Radio<colors>(
+              tileColor: Colors.pink[100],
+              //horizontalTitleGap: 0,
+              leading: Radio(
                 value: colors.green,
                 groupValue: _color,
                 onChanged: (colors? value) {
