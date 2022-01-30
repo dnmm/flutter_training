@@ -46,7 +46,11 @@ class Homepage1 extends StatelessWidget {
               Card(
                 margin: const EdgeInsets.all(5),
                 color: Colors.green[100],
-                elevation: 8,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(19),
+                ),
+                elevation: 10,
+                shadowColor: Colors.red,
                 child: Container(
                   padding: const EdgeInsets.all(15),
                   child: const Text(
@@ -61,7 +65,11 @@ class Homepage1 extends StatelessWidget {
               Card(
                 margin: const EdgeInsets.all(5),
                 color: Colors.green[100],
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(19),
+                ),
                 elevation: 8,
+                shadowColor: Colors.red,
                 child: Container(
                   padding: const EdgeInsets.all(15),
                   width: 100,
@@ -77,7 +85,11 @@ class Homepage1 extends StatelessWidget {
               Card(
                 margin: const EdgeInsets.all(5),
                 color: Colors.green[100],
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(19),
+                ),
                 elevation: 8,
+                shadowColor: Colors.red,
                 child: Container(
                   padding: const EdgeInsets.all(15),
                   child: const Text(
@@ -92,7 +104,11 @@ class Homepage1 extends StatelessWidget {
               Card(
                 margin: const EdgeInsets.all(5),
                 color: Colors.green[100],
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(19),
+                ),
                 elevation: 8,
+                shadowColor: Colors.red,
                 child: Container(
                   padding: const EdgeInsets.all(15),
                   child: const Text(
