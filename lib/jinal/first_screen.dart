@@ -1,16 +1,14 @@
-// ignore_for_file: camel_case_types, use_key_in_widget_constructors, prefer_const_constructors
-
 import 'package:flutter/material.dart';
 
-class firstscreen extends StatelessWidget {
+class Firstscreen extends StatelessWidget {
+  const Firstscreen({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
-    // ignore: todo
-    // TODO: implement build
-    return Material(
+    return const Material(
       color: Colors.amberAccent,
       child: Center(
-        child: Text("Hello world",
+        child: Text("First page",
             textDirection: TextDirection.ltr, style: TextStyle(fontSize: 50.0)),
       ),
     );
