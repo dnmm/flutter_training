@@ -1,12 +1,9 @@
-// ignore_for_file: prefer_const_constructors
-
 import 'package:flutter/material.dart';
-import 'package:flutter_training/jinal/first_screen.dart';
+import 'First_screen.dart';
 
-void main() => runApp(myapp());
+class Firstclass extends StatelessWidget {
+  const Firstclass({Key? key}) : super(key: key);
 
-// ignore: camel_case_types, use_key_in_widget_constructors
-class myapp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -14,9 +11,9 @@ class myapp extends StatelessWidget {
         title: "My App",
         home: Scaffold(
             appBar: AppBar(
-              title: Text("My App"),
+              title: const Text("My App"),
               //backgroundColor: Colors.amber,
             ),
-            body: firstscreen()));
+            body: const Firstscreen()));
   }
 }
