@@ -47,9 +47,9 @@ class MyImagesPage extends StatelessWidget {
                 padding: const EdgeInsets.all(0.0),
                 child: Image.asset(
                   'assets/images/logo.png',
-                  //fit: BoxFit.cover,
-                  height: 200,
-                  width: 200,
+                  fit: BoxFit.fill,
+                  height: 100,
+                  width: 400,
                 ),
               )
             ],
