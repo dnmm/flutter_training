@@ -37,7 +37,7 @@ class Imagepage extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.all(0.0),
                 child: Image.asset(
-                  'assets/images/a.png',
+                  'assets/images/logo.png',
                   //fit: BoxFit.cover,
                   height: 200,
                   width: 200,
