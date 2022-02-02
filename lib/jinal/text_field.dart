@@ -14,10 +14,15 @@ class Textfield extends StatelessWidget {
             //backgroundColor: Colors.amber,
           ),
           body: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: const <Widget>[
+            textDirection: TextDirection.ltr,
+            //mainAxisAlignment: MainAxisAlignment.center,
+            children: const [
               Padding(
-                padding: EdgeInsets.all(20.0),
+                padding: EdgeInsets.all(10.0),
+                child: Text('First Name'),
+              ),
+              Padding(
+                padding: EdgeInsets.all(10.0),
                 child: TextField(
                   decoration: InputDecoration(
                     //hintText: 'Name',
@@ -26,7 +31,7 @@ class Textfield extends StatelessWidget {
                   ),
                   style: TextStyle(
                     color: Colors.blue,
-                    fontSize: 18.0,
+                    fontSize: 15.0,
                   ),
                 ),
               ),
