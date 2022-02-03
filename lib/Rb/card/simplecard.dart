@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 //import 'package:flutter_training/Rb/radio%20button/radiorow.dart';
 
-class Containerpage extends StatelessWidget {
-  const Containerpage({Key? key}) : super(key: key);
+class Simplecart extends StatelessWidget {
+  const Simplecart({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
