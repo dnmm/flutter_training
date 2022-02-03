@@ -26,13 +26,91 @@ class _SimplelistviewpageState extends State<Simplelistviewpage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text("gridview page"),
+          title: Text("Listview page"),
         ),
         body: ListView(
           children: [
             Card(
                 child: ListTile(
               title: Text("python course"),
+              subtitle: Text('django and tkinter'),
+              leading: Icon(Icons.book),
+              trailing: MaterialButton(
+                color: Colors.blue,
+                onPressed: () {},
+                child: Text('click'),
+              ),
+              //trailing: Icon(Icons.star),
+              //onLongPress: () {},
+              onTap: () {},
+              tileColor: Colors.white,
+            )),
+            Card(
+              child: ListTile(
+                title: Text("flutter course"),
+              ),
+            ),
+            Card(
+                child: ListTile(
+              title: Text("C curse"),
+            )),
+            Card(
+                child: ListTile(
+              title: Text("php curse"),
+            )),
+            Card(
+                child: ListTile(
+              title: Text("python course"),
+              subtitle: Text('django and tkinter'),
+              leading: Icon(Icons.book),
+              trailing: Icon(Icons.star),
+              //onLongPress: () {},
+              onTap: () {},
+              tileColor: Colors.blue[200],
+            )),
+            Card(
+              child: ListTile(
+                title: Text("flutter course"),
+              ),
+            ),
+            Card(
+                child: ListTile(
+              title: Text("C curse"),
+            )),
+            Card(
+                child: ListTile(
+              title: Text("php curse"),
+            )),
+            Card(
+                child: ListTile(
+              title: Text("python course"),
+              subtitle: Text('django and tkinter'),
+              leading: Icon(Icons.book),
+              trailing: Icon(Icons.star),
+              //onLongPress: () {},
+              onTap: () {},
+            )),
+            Card(
+              child: ListTile(
+                title: Text("flutter course"),
+              ),
+            ),
+            Card(
+                child: ListTile(
+              title: Text("C curse"),
+            )),
+            Card(
+                child: ListTile(
+              title: Text("php curse"),
+            )),
+            Card(
+                child: ListTile(
+              title: Text("python course"),
+              subtitle: Text('django and tkinter'),
+              leading: Icon(Icons.book),
+              trailing: Icon(Icons.star),
+              //onLongPress: () {},
+              onTap: () {},
             )),
             Card(
               child: ListTile(

@@ -41,13 +41,13 @@ class _ListviewpageState extends State<Listviewpage> {
                 leading: CircleAvatar(
                   backgroundImage: AssetImage(images[index]),
                 ),
-                title: Text("This is title"),
+                title: Text("This is title $index"),
                 subtitle: Text("This is subtitle"),
               ),
             );
           },
           itemCount: images.length,
-          //shrinkWrap: true,
+          //shrinkWrap: false,
           padding: EdgeInsets.all(5),
           scrollDirection: Axis.vertical,
         ));

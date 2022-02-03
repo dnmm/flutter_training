@@ -43,22 +43,6 @@ class _StateExampleState extends State<StateExample> {
           const SizedBox(
             width: 20,
           ),
-          // Flexible(
-          //   child: ListTile(
-          //     title: const Text("Red"),
-          //     tileColor: Colors.pink[100],
-          //     horizontalTitleGap: 0,
-          //     leading: Radio<colors>(
-          //       value: colors.red,
-          //       groupValue: _color,
-          //       onChanged: (colors? value) {
-          //         setState(() {
-          //           _color = value ?? _color;
-          //         });
-          //       },
-          //     ),
-          //   ),
-          // ),
           Flexible(
             child: ListTile(
               title: const Text("Green"),
