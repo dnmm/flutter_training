@@ -3,8 +3,6 @@ import 'package:flutter/material.dart';
 class SingleContoner extends StatelessWidget {
   const SingleContoner({Key? key}) : super(key: key);
 
-  get body => null;
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -35,8 +33,8 @@ class SingleContoner extends StatelessWidget {
             // alignment: Alignment(-1.0, 0.0), //for right
             // alignment: Alignment(0.0, 0.0), // for center
             // alignment: Alignment(0.0, 1.0), // for bottom
-            alignment: Alignment(0.0, -1.0), // for top
-            // alignment: Alignment(0.0, -.8), // for manual top
+            // alignment: Alignment(0.0, -1.0), // for top
+            alignment: Alignment(0.0, -.8), // for manual top
             // alignment: Alignment(0.0, 0.6), // for manual botton
             // alignment: Alignment(-.8, 0.0),// for manual right
             // alignment: Alignment(0.4, 0.0), // for manual left

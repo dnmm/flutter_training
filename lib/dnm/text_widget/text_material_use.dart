@@ -23,9 +23,7 @@ class TextMaterialUse extends StatelessWidget {
         body: const Center(
           child: Text(
             "Simple Text",
-            style: TextStyle(
-              fontSize: 40.0,
-            ),
+            style: TextStyle(fontSize: 40.0, fontWeight: FontWeight.bold),
             textAlign: TextAlign.center,
             //textAlign: TextAlign.left,
             //textDirection: TextDirection.ltr,
@@ -33,7 +31,7 @@ class TextMaterialUse extends StatelessWidget {
             //softwrap take boolean function
             //if true then it take space according him
             //softWrap: false,
-            softWrap: true,
+            // softWrap: true,
           ),
         ),
       ),
