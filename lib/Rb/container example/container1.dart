@@ -42,9 +42,7 @@ class _ContainerhomepageState extends State<Containerhomepage> {
               Container(
                 color: Colors.orange,
                 margin: EdgeInsets.all(25.0),
-                child: FlutterLogo(
-                  size: 60.0,
-                ),
+                child: Text(" starting row"),
               ),
               Container(
                 color: Colors.blue,
@@ -127,6 +125,9 @@ class _ContainerhomepageState extends State<Containerhomepage> {
           Container(
               color: Colors.red,
               margin: EdgeInsets.all(15.0),
+              height: 30,
+              width: 150,
+              alignment: Alignment.center,
               child: Text("start column")),
           Container(
             color: Colors.purple,

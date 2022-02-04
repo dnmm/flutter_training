@@ -41,8 +41,8 @@ class _ListviewpageState extends State<Listviewpage> {
                 leading: CircleAvatar(
                   backgroundImage: AssetImage(images[index]),
                 ),
-                title: Text("This is title $index"),
-                subtitle: Text("This is subtitle"),
+                title: Text("company name $index"),
+                subtitle: Text("branch"),
               ),
             );
           },

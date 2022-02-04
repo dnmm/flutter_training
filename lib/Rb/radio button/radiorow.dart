@@ -62,8 +62,8 @@ class _StateExampleState extends State<StateExample> {
           Flexible(
             child: ListTile(
               title: const Text("Blue"),
-              //tileColor: Colors.blue[100],
-              horizontalTitleGap: 0,
+              tileColor: Colors.blue[100],
+              //horizontalTitleGap: 0,
               leading: Radio<colors>(
                 value: colors.blue,
                 groupValue: _color,

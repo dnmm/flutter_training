@@ -39,19 +39,20 @@ class Imagepage extends StatelessWidget {
                 child: Image.asset(
                   'assets/images/logo.png',
                   //fit: BoxFit.cover,
-                  height: 200,
-                  width: 200,
+                  //height: 600,
+                  width: 300,
+                  fit: BoxFit.fitWidth,
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.all(0.0),
-                child: Image.asset(
-                  'assets/images/a.png',
-                  //fit: BoxFit.cover,
-                  height: 200,
-                  width: 200,
-                ),
-              )
+              // Padding(
+              //   padding: const EdgeInsets.all(0.0),
+              //   child: Image.asset(
+              //     'assets/images/a.png',
+              //     //fit: BoxFit.cover,
+              //     height: 200,
+              //     width: 200,
+              //   ),
+              // )
             ],
           ),
         ),

@@ -69,26 +69,8 @@ class _SimplelistviewpageState extends State<Simplelistviewpage> {
               tileColor: Colors.blue[200],
             )),
             Card(
-              child: ListTile(
-                title: Text("flutter course"),
-              ),
-            ),
-            Card(
                 child: ListTile(
               title: Text("C curse"),
-            )),
-            Card(
-                child: ListTile(
-              title: Text("php curse"),
-            )),
-            Card(
-                child: ListTile(
-              title: Text("python course"),
-              subtitle: Text('django and tkinter'),
-              leading: Icon(Icons.book),
-              trailing: Icon(Icons.star),
-              //onLongPress: () {},
-              onTap: () {},
             )),
             Card(
               child: ListTile(
@@ -111,12 +93,8 @@ class _SimplelistviewpageState extends State<Simplelistviewpage> {
               trailing: Icon(Icons.star),
               //onLongPress: () {},
               onTap: () {},
+              tileColor: Colors.blue[200],
             )),
-            Card(
-              child: ListTile(
-                title: Text("flutter course"),
-              ),
-            ),
             Card(
                 child: ListTile(
               title: Text("C curse"),
@@ -126,7 +104,7 @@ class _SimplelistviewpageState extends State<Simplelistviewpage> {
               title: Text("php curse"),
             )),
           ],
-          shrinkWrap: true,
+          // shrinkWrap: true,
         ));
   }
 }

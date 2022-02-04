@@ -43,8 +43,7 @@ class _HomePageState extends State<HomePage> {
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(20),
-          child:
-              Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+          child: Column(crossAxisAlignment: CrossAxisAlignment.end, children: [
             const Text(
               'Choose your hobbies:',
               style: TextStyle(fontSize: 24),
@@ -59,9 +58,9 @@ class _HomePageState extends State<HomePage> {
               return CheckboxListTile(
                   value: hobby["isChecked"],
                   title: Text(hobby["name"]),
-                  onChanged: (newValue) {
+                  onChanged: (Valu) {
                     setState(() {
-                      hobby["isChecked"] = newValue;
+                      hobby["isChecked"] = Valu;
                     });
                   });
             }).toList()),

@@ -35,7 +35,7 @@ class _SimplestackpageState extends State<Simplestackpage> {
         child: Column(
           children: [
             Padding(
-              padding: EdgeInsets.symmetric(horizontal: 30),
+              padding: EdgeInsets.symmetric(horizontal: 0),
               child: Container(
                 // alignment: Alignment(0.0, 0.9),
                 child: Stack(

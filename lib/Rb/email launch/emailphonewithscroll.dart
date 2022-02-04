@@ -29,7 +29,7 @@ class Emailurlcaunc extends StatelessWidget {
                   Card(
                     color: Colors.white70,
                     shape: RoundedRectangleBorder(
-                      side: const BorderSide(color: Colors.white, width: 2.0),
+                      side: const BorderSide(color: Colors.blue, width: 1.0),
                       borderRadius: BorderRadius.circular(25.0),
                     ),
                     child: Column(
@@ -43,7 +43,7 @@ class Emailurlcaunc extends StatelessWidget {
                                 "Open Website",
                                 style: TextStyle(fontSize: 25),
                               ),
-                              onPressed: () => launch("http://google.com"),
+                              onPressed: () => launch("http://www.tryeno.com"),
                             )),
                       ],
                     ),

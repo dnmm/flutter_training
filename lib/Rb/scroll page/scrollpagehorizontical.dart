@@ -37,7 +37,11 @@ class _ScrollhommeState extends State<Scrollhomme> {
         color: Colors.blue,
         child: Center(
           child: Image.network(
-              "https://images.pexels.com/photos/213780/pexels-photo-213780.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"),
+            "https://images.pexels.com/photos/213780/pexels-photo-213780.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+            height: 900,
+            width: 400,
+            fit: BoxFit.cover,
+          ),
         ),
       ),
       Container(

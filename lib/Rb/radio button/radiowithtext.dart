@@ -53,9 +53,9 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
                 leading: Radio(
                   value: SingingCharacter.male,
                   groupValue: _character,
-                  onChanged: (SingingCharacter? value) {
+                  onChanged: (SingingCharacter? valu) {
                     setState(() {
-                      _character = value;
+                      _character = valu;
                     });
                   },
                 ),
