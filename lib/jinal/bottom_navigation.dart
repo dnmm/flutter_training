@@ -54,15 +54,15 @@ class Bott1 extends StatelessWidget {
               BottomNavigationBarItem(
                   icon: Icon(Icons.account_balance_wallet),
                   // ignore: deprecated_member_use
-                  title: Text('Wallet')),
+                  label: 'Wallet'),
               BottomNavigationBarItem(
                   icon: Icon(Icons.add_shopping_cart),
                   // ignore: deprecated_member_use
-                  title: Text('Cart')),
+                  label: 'Cart'),
               BottomNavigationBarItem(
                   icon: Icon(Icons.account_circle),
                   // ignore: deprecated_member_use
-                  title: Text('Profile')),
+                  label: 'Profile'),
             ],
           ),
           body: Container(
