@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/jinal/navigation/firstpage.dart';
+import 'package:flutter_training/jinal/navigation/firstpage.dart';
 //import 'package:flutter_application_1/jinal/navigation/secoundpage.dart';
 
 class Navigation extends StatefulWidget {
