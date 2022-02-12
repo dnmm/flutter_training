@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_training/jinal/navigation/secoundpage.dart';
+import 'package:flutter_application_1/jinal/navigation/secoundpage.dart';
 
 class Firstpage extends StatefulWidget {
   const Firstpage({Key? key}) : super(key: key);
