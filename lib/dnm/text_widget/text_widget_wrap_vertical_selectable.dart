@@ -16,7 +16,7 @@ class TextWidgetWrapVertical extends StatelessWidget {
             spacing: 20,
             children: const [
               Text("Text Here 1"),
-              Text("Text Here 2"),
+              SelectableText("Text Here 2"),
               Text("Text Here 3"),
             ],
           ),
