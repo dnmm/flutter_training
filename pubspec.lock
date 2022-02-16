@@ -238,7 +238,7 @@ packages:
       name: file_picker
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "4.3.3"
+    version: "4.4.0"
   flutter:
     dependency: "direct main"
     description: flutter
@@ -867,21 +867,21 @@ packages:
       name: video_player_android
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.2.17"
+    version: "2.3.0"
   video_player_avfoundation:
     dependency: transitive
     description:
       name: video_player_avfoundation
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.2.18"
+    version: "2.3.0"
   video_player_platform_interface:
     dependency: transitive
     description:
       name: video_player_platform_interface
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "5.0.2"
+    version: "5.1.0"
   video_player_web:
     dependency: transitive
     description:
