@@ -42,6 +42,9 @@ dependencies:
   google_fonts: ^2.3.1
   flutter_share: ^2.0.0
   documents_picker: ^1.0.0
+  flutter_riverpod: ^1.0.3
+  auto_size_text: ^3.0.0
+  shared_preferences: ^2.0.13
   #pay: ^1.0.8
 
 dev_dependencies:
