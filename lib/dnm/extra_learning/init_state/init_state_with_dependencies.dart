@@ -1,20 +1,30 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 
-class MyInitStateDispose extends StatelessWidget {
-  const MyInitStateDispose({Key? key}) : super(key: key);
+class MyInitStateDispose extends StatefulWidget {
+  MyInitStateDispose({Key? key, this.userName = "My Name"}) : super(key: key);
+
+  String? userName;
 
   @override
-  Void initState() {
+  State<MyInitStateDispose> createState() => _MyInitStateDisposeState();
+}
+
+class _MyInitStateDisposeState extends State<MyInitStateDispose> {
+  @override
+  String? name;
+
+  void initState() {
     super.initState();
+    print('Init State');
+    this.name = widget.userName;
   }
 
   @override
   Widget build(BuildContext context) {
+    print('Build Function');
     return MaterialApp(
-      title: 'Auto Text Size Adjust',
+      title: 'Init State $name',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
