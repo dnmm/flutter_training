@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'dnm/extra_learning/joaon_parshing/joson_parsing.dart';
+import 'dnm/extra_learning/api_joaon_parshing/call_api.dart';
 
 // import 'dnm/dnm_main.dart';
 
@@ -8,7 +8,7 @@ void main() {
   // note - please comment below line and write your run app name
 //runApp(const MainMyApp());0
 
-  runApp(JosonParshing());
+  runApp(JsonParsingApi());
 }
 
 class MainMyApp extends StatelessWidget {
