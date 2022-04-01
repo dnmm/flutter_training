@@ -45,9 +45,9 @@ dependencies:
   flutter_riverpod: ^1.0.3
   auto_size_text: ^3.0.0
   shared_preferences: ^2.0.13
-  uuid: ^3.0.6
   flutter_hooks: ^0.18.2+1
   hooks_riverpod: ^1.0.3
+  uuid: ^3.0.6
   #pay: ^1.0.8
 
 dev_dependencies:

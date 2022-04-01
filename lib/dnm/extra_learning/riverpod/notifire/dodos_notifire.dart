@@ -1,0 +1,26 @@
+import 'package:hooks_riverpod/hooks_riverpod.dart';
+import '../models/todo.dart';
+
+final todoListProvider = StateNotifierProvider((ref) => TodoList([]));
+
+class TodoList extends StateNotifier<List<Todo>> {
+  TodoList([List<Todo>? initialTodos]) : super(initialTodos ?? []);
+
+  void addTodo(String description) {
+    state = [
+      ...state,
+      Todo(description: description, id: ''),
+    ];
+  }
+
+  void editTodo(String id, String description) {
+    state = [
+      for (final todo in state)
+        if (todo.id == id) Todo(id: id, description: description) else todo
+    ];
+  }
+
+  void removeTodo(String id) {
+    state = state.where((todo) => todo.id != id).toList();
+  }
+}

@@ -1,9 +1,9 @@
 import 'package:uuid/uuid.dart';
 
-var _uuid = uuid();
+var _uuid = const Uuid();
 
 class Todo {
   final String id;
   final String description;
-  Todo({this.description, String id}) : id = id ?? _uuid.v4;
+  Todo({required this.description, required String id}) : id = _uuid.v4();
 }
