@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 
+// ignore: must_be_immutable
 class MyInitStateDispose extends StatefulWidget {
   MyInitStateDispose({Key? key, this.userName = "My Name"}) : super(key: key);
 
@@ -12,6 +13,7 @@ class MyInitStateDispose extends StatefulWidget {
 
 class _MyInitStateDisposeState extends State<MyInitStateDispose> {
   @override
+  // ignore: override_on_non_overriding_member
   String? name;
 
   void initState() {

@@ -25,6 +25,26 @@ class JsonParsingApi extends StatelessWidget {
     }
   }
 
+//final response = await http.get(
+    //   Uri.parse('https://dev2.nomikai.live/users'),
+    //   // Send authorization headers to the backend.
+    //   headers: {
+    //     'Content-Type': 'application/json',
+    //     "Accept": "application/json",
+    //     "Authorization":
+    //         "eyJhbGciOiJIUzI1NiIsInR5cCI6ImFjY2VzcyJ9.eyJ1c2VySWQiOiI2MjQyYjQ0Y2RjOWJhZDEwNjk3NzY0ZjAiLCJpYXQiOjE2NDg4ODEzMjAsImV4cCI6MTY0ODk2NzcyMCwiYXVkIjoiaHR0cHM6Ly95b3VyZG9tYWluLmNvbSIsImlzcyI6ImZlYXRoZXJzIiwic3ViIjoiYW5vbnltb3VzIiwianRpIjoiNGUwMDg0MTUtMWRiOS00MTNkLWEwMWMtOTM4ODBhMzU1MTM5In0.ZVpl_QJGxZ8DLedP1Usedv2w1TxpNFHM1CiOjvedj0E,",
+    //   },
+    // );
+    // //  Response response = await http.get(url);
+    // print(response.statusCode);
+    // if (response.statusCode == 200) {
+    //   print('success');
+    //   final data = jsonDecode(response.body);
+    //   print(data);
+    // } else {
+    //   print('oops something went wrong');
+    // }
+
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
