@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import 'Rb/reverpod/todomain.dart';
+import 'Rb/reverpod/random_number.dart';
 
 // import 'dnm/dnm_main.dart';
 
@@ -17,7 +17,7 @@ void main() {
     // application in a "ProviderScope" widget.
     // This is where the state of our providers will be stored.
     ProviderScope(
-      child: todoMyApp(),
+      child: RandomNumberApp(),
     ),
   );
 }
