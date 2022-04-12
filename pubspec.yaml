@@ -51,6 +51,7 @@ dependencies:
   mockito: ^5.1.0
   build_runner: ^2.1.8
   riverpod: ^1.0.3
+  agora_uikit: ^0.0.4
   #pay: ^1.0.8
 
 dev_dependencies:
