@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class MultipleCard extends StatelessWidget {
   const MultipleCard({Key? key}) : super(key: key);
 
-  static const String _title = 'Flutter Code Sample';
+  static const String _title = 'Flutter Multiple Card';
 
   @override
   Widget build(BuildContext context) {
