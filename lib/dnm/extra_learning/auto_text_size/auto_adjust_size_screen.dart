@@ -16,7 +16,7 @@ class MyAutoTextSizeAdjust extends StatelessWidget {
           title: const Text(
             'Auto Text Size Adjust',
             style: TextStyle(
-              fontSize: 20.0,
+              fontSize: 20,
               color: Colors.yellow,
             ),
           ),
@@ -24,8 +24,8 @@ class MyAutoTextSizeAdjust extends StatelessWidget {
         body: const Center(
           child: AutoSizeText(
             'This is Auto My Text Size Adjust in two line',
-            style: TextStyle(fontSize: 50),
-            maxLines: 2,
+            style: TextStyle(fontSize: 60),
+            maxLines: 10,
           ),
         ),
       ),
