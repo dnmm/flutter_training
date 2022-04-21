@@ -5,7 +5,8 @@ import 'package:flutter_application_1/dnm/extra_learning/riverpod/random_number.
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class ProviderScope extends StatelessWidget {
-  ProviderScope({Key? key, RandomNumberGenerator child}) : super(key: key);
+  ProviderScope({Key? key, required RandomNumberGenerator child})
+      : super(key: key);
 
   final valueProvider = Provider<int>((ref) {
     return 36;
