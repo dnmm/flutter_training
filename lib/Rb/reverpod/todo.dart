@@ -35,6 +35,7 @@ class TodoList extends StateNotifier<List<Todo>> {
         description: description,
       ),
     ];
+    print("add item..${state}");
   }
 
   void toggle(String id) {
@@ -49,6 +50,7 @@ class TodoList extends StateNotifier<List<Todo>> {
         else
           todo,
     ];
+    print("toggle item..${state}");
   }
 
   void edit({required String id, required String description}) {
@@ -63,6 +65,7 @@ class TodoList extends StateNotifier<List<Todo>> {
         else
           todo,
     ];
+    print("Edit item..${state}");
   }
 
   void remove(Todo target) {
