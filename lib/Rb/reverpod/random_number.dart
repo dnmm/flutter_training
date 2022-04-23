@@ -42,6 +42,7 @@ class RandomNumberApp extends StatelessWidget {
                         //using variable
                         var b = ref.read(randomNumberProvider.notifier);
                         b.generate();
+                        // ignore: invalid_use_of_protected_member
                         debugPrint("generated rendom number..${b.state}");
                       });
                 },
