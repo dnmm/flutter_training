@@ -4,8 +4,8 @@
 
 import 'package:flutter/material.dart';
 
-class Textwalin extends StatelessWidget {
-  const Textwalin({Key? key}) : super(key: key);
+class TextExample extends StatelessWidget {
+  const TextExample({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

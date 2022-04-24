@@ -5,7 +5,7 @@ void main() {
   // note - please comment below line and write your run app name
 //runApp(const MainMyApp());0
 
-  runApp(Textwalin());
+  runApp(TextExample());
 }
 
 //riverpod
