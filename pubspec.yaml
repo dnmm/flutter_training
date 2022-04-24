@@ -39,15 +39,13 @@ dependencies:
   google_fonts: ^2.3.1
   flutter_share: ^2.0.0
   documents_picker: ^1.0.0
-  flutter_riverpod: ^1.0.3
+  hooks_riverpod: ^1.0.3
   auto_size_text: ^3.0.0
   shared_preferences: ^2.0.13
   flutter_hooks: ^0.18.2+1
-  hooks_riverpod: ^1.0.3
   uuid: ^3.0.6
   mockito: ^5.1.0
   build_runner: ^2.1.8
-  riverpod: ^1.0.3
   agora_uikit: ^0.0.4
   #pay: ^1.0.8
 
