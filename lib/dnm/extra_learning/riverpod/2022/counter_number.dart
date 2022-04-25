@@ -17,6 +17,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    debugPrint("run app apply themes and color");
     return MaterialApp(
       title: 'Counter App',
       home: const HomePage(),
@@ -37,6 +38,7 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    debugPrint("run app show home app bar");
     return Scaffold(
       appBar: AppBar(
         title: const Text("Home"),
@@ -45,6 +47,7 @@ class HomePage extends StatelessWidget {
           child: ElevatedButton(
         child: const Text('Go to Counter Page'),
         onPressed: () {
+          debugPrint("on press cuunter page go to cunter page");
           Navigator.of(context).push(
             MaterialPageRoute(
               builder: ((context) => const CounterPage()),
@@ -63,37 +66,13 @@ class CounterPage extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final int counter = ref.watch(counterProvider);
 
-
-    ref.listen<int>(
-      counterProvider,
-      (previous, next) {
-        if (next >= 5) {
-          showDialog(
-            context: context,
-            builder: (context) {
-              return AlertDialog(
-                title: const Text("Warning"),
-                content: const Text(
-                    "Counter dangerously high. Consider resetting it."),
-                actions: [
-                  TextButton(
-                      onPressed: () {
-                        Navigator.of(context).pop();
-                      },
-                      child: const Text("OK"))
-                ],
-              );
-            },
-          );
-        }
-      },
-    );
     return Scaffold(
       appBar: AppBar(
         title: const Text("Counter"),
         actions: [
           IconButton(
             onPressed: () {
+              debugPrint("on press reset button increment value 0");
               ref.refresh(counterProvider);
             },
             icon: const Icon(Icons.refresh),
@@ -109,6 +88,7 @@ class CounterPage extends ConsumerWidget {
       floatingActionButton: FloatingActionButton(
         child: const Icon(Icons.add),
         onPressed: () {
+          debugPrint("on press + increment value");
           ref.read(counterProvider.notifier).state++;
         },
       ),

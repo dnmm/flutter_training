@@ -3,16 +3,16 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 //Use Web socket Client
 abstract class WebsocketClient {
-  Stream<int> getCounterStream();
+  Stream<int> getCounterStream([int start]);
 }
 
 class FakeWebSocketClient implements WebsocketClient {
   @override
-  Stream<int> getCounterStream() async* {
-    int i = 0;
+  Stream<int> getCounterStream([int start = 0]) async* {
+    int i = start;
     while (true) {
-      await Future.delayed(const Duration(milliseconds: 500));
       yield i++;
+      await Future.delayed(const Duration(milliseconds: 500));
     }
   }
 }
@@ -21,13 +21,15 @@ final websocketClientProvider = Provider<WebsocketClient>((ref) {
   return FakeWebSocketClient();
 });
 
-// use- StateProvider.autoDispose for remove counter ++ value
-final counterProvider = StreamProvider<int>((ref) {
+// use- family.autoDispose for dispose
+final counterProvider =
+    StreamProvider.family.autoDispose<int, int>((ref, start) {
   final wsClient = ref.watch(websocketClientProvider);
-  return wsClient.getCounterStream();
+  return wsClient.getCounterStream(start);
 });
 
 void main() {
+  debugPrint("Go to home page");
   runApp(
     const ProviderScope(
       child: MyApp(),
@@ -40,6 +42,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    debugPrint("Return Material App");
     return MaterialApp(
       title: 'Counter App',
       home: const HomePage(),
@@ -60,6 +63,7 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    debugPrint("Return Scaffold");
     return Scaffold(
       appBar: AppBar(
         title: const Text("Home"),
@@ -68,6 +72,7 @@ class HomePage extends StatelessWidget {
           child: ElevatedButton(
         child: const Text('Go to Counter Page'),
         onPressed: () {
+          debugPrint("Go to on Counter Page");
           Navigator.of(context).push(
             MaterialPageRoute(
               builder: ((context) => const CounterPage()),
@@ -84,8 +89,9 @@ class CounterPage extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    //  final Stream<int> counter = ref.watch(counterProvider.stream);
-    final AsyncValue<int> counter = ref.watch(counterProvider);
+    debugPrint("Go to automatic start number 5");
+    //  starting value can be change here
+    final AsyncValue<int> counter = ref.watch(counterProvider(5));
 
     return Scaffold(
       appBar: AppBar(
@@ -96,9 +102,10 @@ class CounterPage extends ConsumerWidget {
           // use for show counter value value
           counter
               .when(
-                  data: (int value) => value,
-                  error: (Object e, _) => e,
-                  loading: () => 0)
+                data: (int value) => value,
+                error: (Object e, _) => e,
+                loading: () => 10,
+              )
               .toString(),
           //   use below in place of counter for counter valute in string
           // counter.toString(),
