@@ -31,7 +31,7 @@ final counterProvider =
 void main() {
   debugPrint("Go to home page");
   runApp(
-    const ProviderScope(
+    ProviderScope(
       child: MyApp(),
     ),
   );
