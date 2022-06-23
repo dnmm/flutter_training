@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/dnm/widget/app_bar_with_icon.dart';
+import 'package:flutter_application_1/dnm/set_state/basic.dart';
 
 void main() {
   // note - please comment below line and write your run app name
 //runApp(const MainMyApp());0
 
-  runApp(MyAppBar());
+  runApp(SetStateWidegt());
 }
 
 //riverpod
