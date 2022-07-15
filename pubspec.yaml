@@ -48,6 +48,7 @@ dependencies:
   build_runner: ^2.1.8
   agora_uikit: ^0.0.4
   flutter_local_notifications: ^9.6.1
+  google_maps_flutter: ^2.1.8
   #pay: ^1.0.8
 
 dev_dependencies:
