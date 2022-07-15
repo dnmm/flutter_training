@@ -12,8 +12,8 @@ class TextWidgetWrapVertical extends StatelessWidget {
             title: const Text('Welcome to tex'),
           ),
           body: Wrap(
-            direction: Axis.vertical,
-            spacing: 20,
+            direction: Axis.horizontal,
+            spacing: 40,
             children: const [
               Text("Text Here 1"),
               SelectableText("Text Here 2"),

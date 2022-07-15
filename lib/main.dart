@@ -6,11 +6,11 @@ void main() {
   // note - please comment below line and write your run app name
 //runApp(const MainMyApp());0
 
-  runApp(Cont());
-}
 
-//riverpod
-// void main() {
+  runApp(Cont());
+
+ 
+}
 //   runApp(
 //     // For widgets to be able to read providers, we need to wrap the entire
 //     // application in a "ProviderScope" widget.

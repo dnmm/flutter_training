@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 class Singlechildscrollview extends StatelessWidget {
-  const Singlechildscrollview({Key? key}) : super(key: key);
+  const Singlechildscrollview(
+      {Key? key, required Axis scrollDirection, required Row child})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
