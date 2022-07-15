@@ -1,16 +1,12 @@
 import 'package:flutter/material.dart';
-
-import 'dnm/extra_learning/send_data_other_screen/main.dart';
+import 'package:flutter_application_1/babita/hello_world/hello.dart';
 
 void main() {
   // note - please comment below line and write your run app name
 //runApp(const MainMyApp());0
 
-  runApp(MyApp());
+  runApp(Cont());
 }
-
-//riverpod
-// void main() {
 //   runApp(
 //     // For widgets to be able to read providers, we need to wrap the entire
 //     // application in a "ProviderScope" widget.
