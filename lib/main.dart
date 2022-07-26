@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/babita/hello_world/hello.dart';
+import 'package:flutter_application_1/dnm/bottom_navigation_rail/navigation_rail.dart';
 
 void main() {
   // note - please comment below line and write your run app name
 //runApp(const MainMyApp());0
 
-  runApp(Cont());
+  runApp(NavigationBarRailSide());
 }
 //   runApp(
 //     // For widgets to be able to read providers, we need to wrap the entire
