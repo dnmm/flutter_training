@@ -37,10 +37,10 @@ class _SplhomepageState extends State<Splhomepage> {
                 backgroundColor: Colors.white,
               )*/
               Text(
-                "Splansh\nScreen",
+                "Splansh Screen",
                 style: TextStyle(
-                  fontSize: 40.0,
-                  color: Colors.white,
+                  fontSize: 50.0,
+                  color: Colors.redAccent,
                   fontWeight: FontWeight.w800,
                   fontFamily: "Cursive",
                 ),

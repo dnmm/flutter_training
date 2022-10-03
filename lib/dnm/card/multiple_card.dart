@@ -68,6 +68,33 @@ class MultipleCard extends StatelessWidget {
                 ],
               ),
             ),
+            Card(
+              child: Column(
+                children: <Widget>[
+                  const ListTile(
+                    leading: Icon(Icons.access_alarm),
+                    title: Text('Welcome To My Timeline2'),
+                    subtitle: Text(
+                        'My time line is for sudey for you and your faimaly'),
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: <Widget>[
+                      TextButton(
+                        child: const Text('BUY TICKETS'),
+                        onPressed: () {/* ... */},
+                      ),
+                      const SizedBox(width: 8),
+                      TextButton(
+                        child: const Text('LISTEN'),
+                        onPressed: () {/* ... */},
+                      ),
+                      const SizedBox(width: 8),
+                    ],
+                  ),
+                ],
+              ),
+            )
           ],
         ),
       ),

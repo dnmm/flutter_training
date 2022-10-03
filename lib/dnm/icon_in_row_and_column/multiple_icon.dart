@@ -15,22 +15,22 @@ class MultipleIcon extends StatelessWidget {
             children: [
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: const <Widget>[
+                children: <Widget>[
                   Icon(
-                    Icons.favorite,
+                    Icons.star_border,
                     color: Colors.pink,
                     size: 24.0,
                     semanticLabel: 'Text to announce in accessibility modes',
                   ),
                   Icon(
-                    Icons.audiotrack,
+                    Icons.star,
                     color: Colors.green,
                     size: 30.0,
                   ),
                   Icon(
-                    Icons.beach_access,
+                    Icons.star,
                     color: Colors.blue,
-                    size: 36.0,
+                    size: 18.0,
                   ),
                 ],
               ),
@@ -40,7 +40,7 @@ class MultipleIcon extends StatelessWidget {
                   Icon(
                     Icons.contact_mail,
                     color: Colors.pink,
-                    size: 80.0,
+                    size: 10.0,
                     semanticLabel: 'Text to announce in accessibility modes',
                   ),
                   Icon(
