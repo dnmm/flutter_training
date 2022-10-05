@@ -67,13 +67,13 @@ class MyCustomFormState extends State<MyCustomForm> {
           ),
           new Container(
               padding: const EdgeInsets.only(left: 150.0, top: 40.0),
-              child: new RaisedButton(
+              child: new ElevatedButton(
                 child: const Text('Submit'),
                 onPressed: () {},
               )),
           new Container(
               padding: const EdgeInsets.only(left: 150.0, top: 40.0),
-              child: new RaisedButton(
+              child: new ElevatedButton(
                 child: const Text('Cancel'),
                 onPressed: () {},
               )),

@@ -20,7 +20,7 @@ class dialogcomfirmationbox extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            new RaisedButton(
+            ElevatedButton(
               onPressed: () async {
                 final ConfirmAction action =
                     (await _asyncConfirmDialog(context)) as ConfirmAction;
@@ -30,10 +30,6 @@ class dialogcomfirmationbox extends StatelessWidget {
                 "Show Alert",
                 style: TextStyle(fontSize: 20.0),
               ),
-              padding: EdgeInsets.fromLTRB(30.0, 10.0, 30.0, 10.0),
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(8.0)),
-              color: Colors.green,
             ),
           ],
         ),
@@ -53,13 +49,13 @@ Future<Future<ConfirmAction?>> _asyncConfirmDialog(BuildContext context) async {
         title: Text('Delete This Contact?'),
         content: const Text('This will delete the contact from your device.'),
         actions: <Widget>[
-          FlatButton(
+          ElevatedButton(
             child: const Text('Cancel'),
             onPressed: () {
               Navigator.of(context).pop(ConfirmAction.Cancel);
             },
           ),
-          FlatButton(
+          ElevatedButton(
             child: const Text('Delete'),
             onPressed: () {
               Navigator.of(context).pop(ConfirmAction.Accept);

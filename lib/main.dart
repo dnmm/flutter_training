@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(const MyApp());
+import 'anita/single_child_scrollview.dart';
+
+void main() => runApp(const MySingleChildScrollView());
 
 class MyApp extends StatelessWidget {
   const MyApp();

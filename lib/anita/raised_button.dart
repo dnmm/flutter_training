@@ -28,16 +28,12 @@ class _MyAppState extends State<MyApp> {
                   msg,
                   style: TextStyle(fontSize: 30, fontStyle: FontStyle.italic),
                 ),
-                RaisedButton(
+                ElevatedButton(
                   child: Text(
                     "Click Here",
                     style: TextStyle(fontSize: 20),
                   ),
                   onPressed: _changeText,
-                  color: Colors.red,
-                  textColor: Colors.yellow,
-                  padding: EdgeInsets.all(8.0),
-                  splashColor: Colors.grey,
                 )
               ],
             ),

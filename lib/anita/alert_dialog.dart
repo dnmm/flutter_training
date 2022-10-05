@@ -1,8 +1,4 @@
-// ignore_for_file: deprecated_member_use
-
 import 'package:flutter/material.dart';
-
-void main() => runApp(MyApp2());
 
 class MyApp2 extends StatelessWidget {
   // This widget is the root of your application.
@@ -33,7 +29,7 @@ class TextFieldAlertDialog extends StatelessWidget {
               decoration: InputDecoration(hintText: "Text Field in Dialog"),
             ),
             actions: <Widget>[
-              new FlatButton(
+              ElevatedButton(
                 child: new Text('SUBMIT'),
                 onPressed: () {
                   Navigator.of(context).pop();
@@ -51,15 +47,11 @@ class TextFieldAlertDialog extends StatelessWidget {
         title: Text('Text Field Alert Dialog Demo'),
       ),
       body: Center(
-        child: FlatButton(
+        child: ElevatedButton(
           child: Text(
             'Show Alert',
             style: TextStyle(fontSize: 20.0),
           ),
-          padding: EdgeInsets.fromLTRB(20.0, 12.0, 20.0, 12.0),
-          shape:
-              RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
-          color: Colors.green,
           onPressed: () => _displayDialog(context),
         ),
       ),
