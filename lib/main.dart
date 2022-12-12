@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/dnm/navigation/push_data_other_screen/main.dart';
 
-import 'Sharmila/layoutWidgets.dart';
+import 'Sharmila/list.dart';
 
 void main() {
   // note - please comment below line and write your run app name
-  runApp(MyApp());
+  runApp(ListViewInDetail());
 
   // runApp(NamePositionalParameter());
 }
