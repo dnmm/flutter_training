@@ -16,7 +16,7 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
         home: Scaffold(
       appBar: AppBar(
-        title: const Text('Layout widgets'),
+        title: const Text('Layout widgets 1'),
       ),
       body: Column(children: [
         Row(
