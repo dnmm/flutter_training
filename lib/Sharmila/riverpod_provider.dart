@@ -13,7 +13,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  const MyApp({key});
 
   // This widget is the root of your application.
   @override
@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-     // home: const MyConsumerWidget(),
+      // home: const MyConsumerWidget(),
       home: const MyWidget(),
       //home: MyNameWidget(),
       //home: const MystlfulWidget(),
@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
 }
 
 class MyConsumerWidget extends ConsumerWidget {
-  const MyConsumerWidget({super.key});
+  const MyConsumerWidget({key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -45,7 +45,7 @@ class MyConsumerWidget extends ConsumerWidget {
 }
 
 class MyWidget extends StatelessWidget {
-  const MyWidget({super.key});
+  const MyWidget({key});
 
   @override
   Widget build(BuildContext context) {
@@ -93,7 +93,7 @@ class MyNameWidget extends StatelessWidget {
 //3. Using ConsumerStatefulWidget & ConsumerState
 
 class MystlfulWidget extends ConsumerStatefulWidget {
-  const MystlfulWidget({super.key});
+  const MystlfulWidget({key});
 
   @override
   ConsumerState<MystlfulWidget> createState() => _MyWidgetState();

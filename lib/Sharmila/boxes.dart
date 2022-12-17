@@ -74,3 +74,44 @@ class _MyAppState extends State<MyApp> {
     ));
   }
 }
+
+//make example and understand
+// Column(children: [
+//           Row(
+//             children: [
+//               const Text('133'),
+//               Expanded(child: const Text('233', textAlign: TextAlign.center)),
+//               const Text('333'),
+//             ],
+//           ),
+//           Expanded(
+//             child: Row(
+//               children: [
+//                 const Text(
+//                   '422',
+//                   textAlign: TextAlign.center,
+//                 ),
+//                 Expanded(
+//                     child: Container(
+//                         child: const Text('522', textAlign: TextAlign.center))),
+//                 const Text(
+//                   '622',
+//                   textAlign: TextAlign.start,
+//                 ),
+//               ],
+//             ),
+//           ),
+//           Row(
+//             children: [
+//               const Text(
+//                 '4',
+//                 textAlign: TextAlign.start,
+//               ),
+//               Expanded(child: const Text('5', textAlign: TextAlign.center)),
+//               const Text(
+//                 '6',
+//                 textAlign: TextAlign.end,
+//               ),
+//             ],
+//           )
+//         ]),
