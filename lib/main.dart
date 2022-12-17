@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-
-import 'Sharmila/list.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
+import 'Sharmila/riverpod_provider.dart';
 
 void main() {
   // note - please comment below line and write your run app name
-  runApp(ListViewInDetail());
+  runApp(ProviderScope(child: RiverPodStateManagment()));
 
   // runApp(NamePositionalParameter());
 }
