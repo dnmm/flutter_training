@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 //creationg provider globaly
-final nameProvider = Provider<String>((ref) {
+final nameProvider = Provider<String>((abc) {
   return 'Sharmila';
 });
 
@@ -35,8 +35,8 @@ class MyConsumerWidget extends ConsumerWidget {
   const MyConsumerWidget({key});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
-    final name = ref.watch(nameProvider);
+  Widget build(BuildContext context, WidgetRef ref1) {
+    final name = ref1.watch(nameProvider);
     return MaterialApp(
         home: Scaffold(
             appBar: AppBar(title: const Text('1. Using Consumer Widget')),
