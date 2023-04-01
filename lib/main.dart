@@ -5,8 +5,12 @@ import 'dnm/1teacher_homework/riverpod_all_step.dart';
 
 void main() {
 //## note - please comment below line and uncomment your run app without ProviderScope
- // runApp(ProviderScope(child: RiverPodStateManagment()));
- runApp(ProviderScope(child: MyWidget()));
+  // runApp(ProviderScope(child: RiverPodStateManagment()));
+  runApp(
+    ProviderScope(
+      child: MyWidget(),
+    ),
+  );
 //## note -without river pod using uncomment it
 
   // runApp(NamePositionalParameter());
