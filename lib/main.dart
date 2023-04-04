@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/anita/ApiCall/calling-api.dart';
+import 'package:flutter_application_1/anita/visibleNotVisible/visible.dart';
 
-void main() => runApp(MaterialApp(title: 'Hello', home: CallingApi()));
+void main() => runApp(FlutterDelayWidgetDemo());
 
 
 
