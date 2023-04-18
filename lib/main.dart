@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/dnm/Button/elevated_button.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'Sharmila/state_provider.dart';
-import 'dnm/1teacher_homework/riverpod_all_step.dart';
 
 void main() {
+//## note -without river pod using uncomment it
+  runApp(MyElevatedButton());
+
 //## note - please comment below line and uncomment your run app without ProviderScope
   // runApp(ProviderScope(child: RiverPodStateManagment()));
   runApp(
@@ -11,7 +14,4 @@ void main() {
       child: MyWidget(),
     ),
   );
-//## note -without river pod using uncomment it
-
-  // runApp(NamePositionalParameter());
 }
