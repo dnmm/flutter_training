@@ -35,7 +35,7 @@ class MyHomePage extends ConsumerWidget {
       body: Center(
         child: Text(
           'value:$value',
-          style: Theme.of(context).textTheme.headline4,
+          style: Theme.of(context).textTheme.headlineMedium,
         ),
       ),
       floatingActionButton: Padding(

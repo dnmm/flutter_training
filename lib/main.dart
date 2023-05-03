@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'Sharmila/state_provider.dart';
-import 'dnm/1teacher_homework/riverpod_all_step.dart';
+
+import '2023_new_training/class1/put_multiple_number_on_screen.dart';
 
 void main() {
 //## note - please comment below line and uncomment your run app without ProviderScope
-  // runApp(ProviderScope(child: RiverPodStateManagment()));
+  // runApp(ProviderScope(child: RiverPodStateManagement()));
   runApp(
     ProviderScope(
-      child: MyWidget(),
+      child: MyNewApp(),
     ),
   );
 //## note -without river pod using uncomment it
