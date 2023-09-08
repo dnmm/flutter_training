@@ -17,7 +17,7 @@ class MyHomePage extends ConsumerWidget {
         child: Text(
           // 2. use the counter value
           'Value: $counter',
-          style: Theme.of(context).textTheme.headline4,
+          style: Theme.of(context).textTheme.headlineMedium,
         ),
       ),
     );

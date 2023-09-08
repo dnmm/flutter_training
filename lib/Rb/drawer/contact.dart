@@ -52,6 +52,7 @@ class MyCustomForm extends StatelessWidget {
           child: ElevatedButton(
             //button backgroun color amber
             style: ElevatedButton.styleFrom(
+              // ignore: deprecated_member_use
               primary: Colors.amber,
             ),
             onPressed: () {},
