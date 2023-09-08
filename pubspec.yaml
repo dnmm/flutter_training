@@ -34,17 +34,17 @@ dependencies:
   stream_chat_flutter: ^3.4.0
   pdf: ^3.7.1
   path_provider: ^2.0.9
-  http: ^0.13.4
-  google_fonts: ^2.3.1
+  http: ^1.1.0
+  google_fonts: ^5.1.0
   flutter_share: ^2.0.0
-  hooks_riverpod: ^1.0.3
+  hooks_riverpod: ^2.4.0
   auto_size_text: ^3.0.0
   shared_preferences: ^2.0.13
-  flutter_hooks: ^0.18.2+1
+  flutter_hooks: ^0.20.1
   uuid: ^3.0.6
   mockito: ^5.1.0
   build_runner: ^2.1.8
-  agora_uikit: ^0.0.4
+  agora_uikit: ^1.3.6
   flutter_local_notifications: ^9.6.1
   google_maps_flutter: ^2.1.8
   flutter_signin_button: ^2.0.0
@@ -61,7 +61,7 @@ dev_dependencies:
   # activated in the `analysis_options.yaml` file located at the root of your
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
-  flutter_lints: ^1.0.0
+  flutter_lints: ^2.0.3
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
