@@ -24,15 +24,13 @@ class MyStatefulWidget extends StatefulWidget {
   State<MyStatefulWidget> createState() => _MyStatefulWidgetState();
 }
 
-/// AnimationControllers can be created with `vsync: this` because of TickerProviderStateMixin.
+/// AnimationControllers can be created with `sync: this` because of TickerProviderStateMixin.
 class _MyStatefulWidgetState extends State<MyStatefulWidget>
     with TickerProviderStateMixin {
-  late TabController _tabController;
 
   @override
   void initState() {
     super.initState();
-    _tabController = TabController(length: 3, vsync: this);
   }
 
   @override

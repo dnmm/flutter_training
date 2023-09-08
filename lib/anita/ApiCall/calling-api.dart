@@ -1,5 +1,3 @@
-import 'dart:convert';
-
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
@@ -15,7 +13,7 @@ class _CallingApiState extends State<CallingApi> {
   var data;
   @override
   void initState() {
-    // TODO: implement initState
+    // ODO: implement initState
     super.initState();
     getData();
   }

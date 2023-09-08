@@ -17,7 +17,7 @@ class order_rating extends StatelessWidget {
         appBarTheme: AppBarTheme(
           titleTextStyle: Theme.of(context)
               .textTheme
-              .headline6
+              .titleLarge
               ?.copyWith(color: Colors.white),
         ),
       ),
@@ -355,5 +355,4 @@ class order_rating extends StatelessWidget {
   //     default:
   //       return Container();
   //   }
-
 }

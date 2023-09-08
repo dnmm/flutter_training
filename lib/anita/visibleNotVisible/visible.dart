@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
 
-import 'package:flutter_application_1/Rahul/radio%20button/radiowithrow.dart';
 // class VisibilityExample extends StatefulWidget {
 //   @override
 //   _VisibilityExampleState createState() {
@@ -110,7 +109,7 @@ class _FlutterDelayWidgetDemoState extends State<FlutterDelayWidgetDemo> {
                         leading: Icon(Icons.access_alarm),
                         title: Text('Welcome To My Timeline'),
                         subtitle: Text(
-                            'My time line is for sudey for you and your faimaly'),
+                            'My time line is for sudsy for you and your fairly'),
                       ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.end,
@@ -137,7 +136,7 @@ class _FlutterDelayWidgetDemoState extends State<FlutterDelayWidgetDemo> {
                     width: 250,
                     child: Center(
                       child: Text(
-                        "Expaired!!",
+                        "Expired!!",
                         style: TextStyle(
                           fontSize: 20.0,
                           color: Colors.red,
