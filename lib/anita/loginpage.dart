@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/Rahul/drawer/mydrawer.dart';
+
+import '../Rahul/drawer/mydrawer.dart';
 
 //import '../Rahul/drawer/mydrawer.dart';
 
