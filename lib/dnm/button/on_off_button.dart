@@ -11,19 +11,19 @@ class OnOffButton extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.red,
       ),
-      home: const Myhomepage(),
+      home: const MyHomePage(),
     );
   }
 }
 
-class Myhomepage extends StatefulWidget {
-  const Myhomepage({Key? key}) : super(key: key);
+class MyHomePage extends StatefulWidget {
+  const MyHomePage({Key? key}) : super(key: key);
 
   @override
-  _MyhomepageState createState() => _MyhomepageState();
+  _MyHomePageState createState() => _MyHomePageState();
 }
 
-class _MyhomepageState extends State<Myhomepage> {
+class _MyHomePageState extends State<MyHomePage> {
   bool _flag = true;
   @override
   Widget build(BuildContext context) {
@@ -45,8 +45,7 @@ class _MyhomepageState extends State<Myhomepage> {
               onPressed: () => setState(() => _flag = !_flag),
               child: Text(_flag ? 'On' : 'Off'),
               style: ElevatedButton.styleFrom(
-                // ignore: deprecated_member_use
-                primary:
+                backgroundColor:
                     _flag ? Colors.teal : Colors.red, // This is what you need!
               ),
             ),
