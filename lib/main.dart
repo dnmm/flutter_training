@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/dnm/extra_learning_2024/riverpod.dart';
+import 'package:flutter_application_1/dnm/extra_learning_2024/hello_world_feature/views/hello_world_notifire_view.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 void main() {
@@ -11,6 +11,6 @@ void main() {
 //     ),
 //   );
 // //## note -without river pod using uncomment it
-  runApp(const ProviderScope(child: MyAppRiverpod()));
+  runApp(ProviderScope(child: HelloWorldNotifierExample()));
 //  runApp(MultipleContoner());
 }
