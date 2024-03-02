@@ -10,14 +10,14 @@ final activeFilterKey = UniqueKey();
 final completedFilterKey = UniqueKey();
 final allFilterKey = UniqueKey();
 
-/// Creates a [TodoList] and initialise it with pre-defined values.
+/// Creates a [TodoList] and initializes it with pre-defined values.
 ///
 /// We are using [StateNotifierProvider] here as a `List<Todo>` is a complex
 /// object, with advanced business logic like how to edit a todo.
-// ignore: sdk_version_constructor_tearoffs
+// ignore: sdk_version_constructor_tariffs
 final todoListProvider = NotifierProvider<TodoList, List<Todo>>(TodoList.new);
 
-/// The different ways to filter the list of todos
+/// The different ways to filter the list of todo
 enum TodoListFilter {
   all,
   active,
@@ -59,7 +59,6 @@ final filteredTodos = Provider<List<Todo>>((ref) {
       return todos;
   }
 });
-
 
 class MyAppRiverpod extends StatelessWidget {
   const MyAppRiverpod({Key? key}) : super(key: key);
