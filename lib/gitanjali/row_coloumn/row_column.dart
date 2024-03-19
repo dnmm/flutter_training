@@ -163,6 +163,7 @@ class RowAndColumnPage extends StatelessWidget {
                         color: Colors.red,
                       ),
                       Container(
+                        child: Icon(Icons.star),
                         height: 75,
                         width: 75,
                         color: Colors.blueAccent,
