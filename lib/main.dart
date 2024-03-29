@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/Rj/text_button.dart';
+import 'package:flutter_application_1/dnm/Button/on_off_button.dart';
 
 void main() {
 // //## note - please comment below line and uncomment your run app without ProviderScope
@@ -11,5 +11,5 @@ void main() {
 //   );
 // //## note -without river pod using uncomment it
   // runApp(const ProviderScope(child: MyAppRiverpod()));
-  runApp( TextButtonRj());
+  runApp( OnOffButton());
 }

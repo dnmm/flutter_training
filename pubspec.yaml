@@ -30,7 +30,7 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.2
-  stream_chat_flutter: ^3.4.0
+  stream_chat_flutter: ^4.4.0
   pdf: ^3.7.1
   path_provider: ^2.0.9
   http: ^1.1.0
@@ -42,7 +42,6 @@ dependencies:
   flutter_hooks: ^0.20.1
   uuid: ^3.0.6
   mockito: ^5.1.0
-  build_runner: ^2.1.8
   agora_uikit: ^1.3.6
   flutter_local_notifications: ^9.6.1
   google_maps_flutter: ^2.1.8
@@ -50,6 +49,8 @@ dependencies:
   camera: ^0.10.0+1
   path: ^1.8.1
   #pay: ^1.0.8
+  flutter_riverpod: ^2.4.10
+  riverpod_annotation: ^2.3.4
 
 dev_dependencies:
   flutter_test:
@@ -61,7 +62,10 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^2.0.3
-
+  build_runner:
+  custom_lint:
+  riverpod_generator: ^2.3.11
+  riverpod_lint: ^2.3.9
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
