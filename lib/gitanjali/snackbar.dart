@@ -9,7 +9,9 @@ class MySnackBar extends StatelessWidget {
       title: 'SnackBar',
       home: Scaffold(
         appBar: AppBar(
-          title: const Text(' My SnackBar Example'),
+          title: const Text(
+            ' My SnackBar Example',
+          ),
         ),
         body: const SnackBarPage(),
       ),
@@ -27,6 +29,7 @@ class SnackBarPage extends StatelessWidget {
         onPressed: () {
           final snackBar = SnackBar(
             content: const Text('hii! this is a SnackBar!'),
+            duration: Duration(seconds: 10),
             action: SnackBarAction(
               label: 'Back',
               onPressed: () {
