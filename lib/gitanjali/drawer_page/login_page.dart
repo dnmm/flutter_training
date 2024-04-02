@@ -1,103 +1,107 @@
 import 'package:flutter/material.dart';
+import 'package:path/path.dart';
 
-//import 'package:flutter_training/Rb/button1.dart';
+class SimpleDrawar extends StatelessWidget {
+  const SimpleDrawar({Key? key}) : super(key: key);
 
-class DrawerLoginPage extends StatelessWidget {
-  const DrawerLoginPage({Key? key}) : super(key: key);
+  static const appTitle = 'Drawer Example';
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: "Flutter Drawer page",
-      theme: ThemeData(
-        primarySwatch: Colors.red,
-      ),
-      home: const MyHomePage(),
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: appTitle,
+      home: MyDrawarPage(title: appTitle),
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({Key? key}) : super(key: key);
+class MyDrawarPage extends StatelessWidget {
+  const MyDrawarPage({Key? key, required this.title}) : super(key: key);
 
-  @override
-  _MyHomePageState createState() => _MyHomePageState();
-}
+  final String title;
 
-class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text(
-          "Flutter Drawer Page",
-          style: TextStyle(
-            fontSize: 20.0,
-          ),
-        ),
+        title: Text(title),
+        backgroundColor: Colors.blue,
       ),
-      drawer: const Drawer(),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: <Widget>[
-          const Padding(
-            padding: EdgeInsets.all(20.0),
-            child: TextField(
-              decoration: InputDecoration(
-                //prefixIcon: Icon(Icons.account_box)
-                labelText: 'User Name',
-                border: OutlineInputBorder(),
+      body: const Center(
+        child: Center(child: Text('My Drawar Page')),
+      ),
+      endDrawer: Drawer(
+        child: ListView(
+          padding: EdgeInsets.zero,
+          children: [
+            UserAccountsDrawerHeader(
+              
+              accountName: const Text(
+                "Gitanjali Rai",
               ),
-              style: TextStyle(
-                color: Colors.blue,
-                fontSize: 18.0,
+              accountEmail: const Text(
+                "rgeet3918@gmail.com",
               ),
-            ),
-          ),
-          const Padding(
-            padding: EdgeInsets.all(20.0),
-            child: TextField(
-              decoration: InputDecoration(
-                //prefixIcon: Icon(Icons.account_box)
-                prefixIcon: Icon(Icons.account_box),
-                labelText: 'Password',
-                border: OutlineInputBorder(),
+              currentAccountPicture: const CircleAvatar(
+                child: Text("Files"),
+                backgroundColor: Colors.white,
               ),
-              style: TextStyle(
-                color: Colors.blue,
-                fontSize: 18.0,
-              ),
+              otherAccountsPictures: const <Widget>[],
+              onDetailsPressed: () {},
             ),
-          ),
-          const Padding(
-            padding: EdgeInsets.all(20.0),
-            child: TextField(
-              decoration: InputDecoration(
-                  prefixIcon: Icon(Icons.email),
-                  labelText: "Email Id",
-                  border: OutlineInputBorder()),
-              maxLength: 10,
-              style: TextStyle(
-                color: Colors.blue,
-                fontSize: 18.0,
-              ),
+            ListTile(
+              leading: Icon(Icons.account_circle),
+              title: const Text('Account'),
+              onTap: () {
+                // Update the state of the app
+                // ...
+                // Then close the drawer
+                Navigator.pop(context);
+              },
             ),
-          ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 190, vertical: 16),
-            child: ElevatedButton(
-              onPressed: () {},
-              child: const Text('click me'),
+            ListTile(
+              leading: Icon(Icons.clean_hands),
+              title: const Text('Clean'),
+              onTap: () {
+                // Update the state of the app
+                // ...
+                // Then close the drawer
+                Navigator.pop(context);
+              },
             ),
-          ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 170, vertical: 16),
-            child: TextButton(
-              onPressed: () {},
-              child: const Text('registration'),
+            ListTile(
+              leading: Icon(Icons.restore_from_trash_outlined),
+              title: const Text('Trash'),
+              onTap: () {
+                // Update the state of the app
+                // ...
+                // Then close the drawer
+                Navigator.pop(context);
+              },
             ),
-          ),
-        ],
+            ListTile(
+              leading: Icon(Icons.settings),
+              title: const Text('Setting'),
+              onTap: () {
+                // Update the state of the app
+                // ...
+                // Then close the drawer
+                Navigator.pop(context);
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.question_answer),
+              title: const Text('Help & feedback'),
+              onTap: () {
+                // Update the state of the app
+                // ...
+                // Then close the drawer
+                Navigator.pop(context);
+              },
+            ),
+          ],
+        ),
       ),
     );
   }
