@@ -1,10 +1,4 @@
-// ignore_for_file: deprecated_member_use
-
 import 'package:flutter/material.dart';
-
-void main() {
-  runApp(new MaterialApp(home: new dialogcomfirmationbox()));
-}
 
 class Week5Day1AlertDialog extends StatelessWidget {
   // This widget is the root of your application.
