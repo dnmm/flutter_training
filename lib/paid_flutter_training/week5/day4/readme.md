@@ -1,0 +1,2 @@
+# 1. Building Cards in Flutter
+Building cards in Flutter involves using the `Card` widget to create a material design card that typically contains content such as text, images, or buttons. You can customize the appearance of the card using properties like `elevation`, `shape`, and `color`, and you can add child widgets to the card's `child` property to display content inside the card.

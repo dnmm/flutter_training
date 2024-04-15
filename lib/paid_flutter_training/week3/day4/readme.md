@@ -1,0 +1,2 @@
+# 1.  Using Text Widget for Text Input
+Using the Text widget for text input in Flutter involves creating a TextField widget, which is a specialized version of Text that allows users to input text. Here's a brief overview:

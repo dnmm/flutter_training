@@ -1,0 +1,2 @@
+# 1. Understanding Stack Widget
+The Stack widget in Flutter allows you to place widgets on top of each other in layers. Widgets in a Stack are positioned relative to the top-left corner by default, and you can use properties like `alignment` and `positioned` to control their placement within the stack. This enables you to create complex UI layouts by overlaying widgets on top of each other.
