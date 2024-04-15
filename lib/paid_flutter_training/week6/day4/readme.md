@@ -1,2 +1,0 @@
-# 1. Using GridView Widget
-Using the `GridView` widget in Flutter allows you to create a grid layout that displays items in a two-dimensional arrangement. You can specify the number of columns, customize the spacing between items, and control the scrolling behavior. The `GridView.builder` constructor is commonly used to efficiently build grids with a large number of items, dynamically loading items as they become visible on the screen.

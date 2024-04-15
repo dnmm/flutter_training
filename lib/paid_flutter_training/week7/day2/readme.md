@@ -1,2 +1,0 @@
-# 1. Working with Checkbox & Radio Button Widgets
-Working with Checkbox and Radio Button widgets in Flutter involves using the `Checkbox` and `Radio` widgets, respectively, to allow users to select options from a list. You can customize the appearance and behavior of these widgets using properties like `value`, `onChanged`, and `groupValue`. By handling the onChanged callback, you can update the selected values based on user input.
