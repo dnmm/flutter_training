@@ -1,0 +1,2 @@
+# 1.  Using Snackbars flutter
+Using Snackbars in Flutter involves displaying short-lived messages or notifications at the bottom of the screen. You can use the `ScaffoldMessenger` to show Snackbars using the `showSnackBar` method. Snackbars typically provide feedback or alerts to the user in response to certain actions or events within the app.

@@ -1,0 +1,2 @@
+# 1.  Implementing Toasts in Flutter
+Implementing toasts in Flutter involves using packages like `fluttertoast` or `toast` to display short-lived messages or notifications to the user. These packages provide methods to show toasts with customizable duration, position, and content. You can call these methods in response to user actions or application events to provide feedback or alerts.

@@ -1,0 +1,2 @@
+# 1. Creating Drawer Navigation
+Creating drawer navigation in Flutter involves using the `Drawer` widget to create a panel that slides in from the side of the screen, typically containing navigation options or settings. You can add a `Drawer` to a `Scaffold` using the `drawer` property and customize its content using child widgets like `ListView` or `Column`.

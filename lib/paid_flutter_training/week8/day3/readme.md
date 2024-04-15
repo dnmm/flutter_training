@@ -1,0 +1,2 @@
+# 1.  Creating Bottom Navigation Bar
+Creating a bottom navigation bar in Flutter involves using the BottomNavigationBar widget to display navigation options at the bottom of the screen, typically allowing users to switch between different views or tabs within the app.

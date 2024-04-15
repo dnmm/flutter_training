@@ -1,0 +1,2 @@
+# 1. Using Icons in Flutter
+Using icons in Flutter involves importing the `flutter_icons` package and then utilizing the `Icon` widget to display icons from various icon sets such as Material Icons, FontAwesome, or custom icon sets. You can specify the icon's size, color, and other properties to customize its appearance. Alternatively, you can use images or SVGs as icons by using the `Image` widget.

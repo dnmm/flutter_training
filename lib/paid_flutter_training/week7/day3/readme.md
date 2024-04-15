@@ -1,0 +1,2 @@
+# 1. Using Progress Bars flutter
+Using progress bars in Flutter involves displaying visual indicators to show the progress of an ongoing task, such as loading data or completing an operation. You can use widgets like `LinearProgressIndicator` or `CircularProgressIndicator` to represent progress visually. These widgets can be customized with properties like `value`, `backgroundColor`, and `color` to match your app's design and provide feedback to the user about the status of the task.

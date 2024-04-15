@@ -1,0 +1,2 @@
+# 1. Implementing TabBar Widget
+Implementing the `TabBar` widget in Flutter involves wrapping it with a `TabBarView` inside a `DefaultTabController`. This setup allows you to display multiple tabs with corresponding content views, and you can customize the appearance and behavior of the tabs using properties like `tabs`, `controller`, and `indicator`.
