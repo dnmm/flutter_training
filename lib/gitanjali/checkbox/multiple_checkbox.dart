@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+/*import 'package:flutter/material.dart';
 
 class MultipleCheckBox extends StatelessWidget {
   const MultipleCheckBox({Key? key}) : super(key: key);
@@ -92,4 +92,4 @@ class _MyMultipleCheckBoxState extends State<MyMultipleCheckBox> {
       ),
     );
   }
-}
+}*/
