@@ -1,40 +1,74 @@
 import 'package:flutter/material.dart';
 
-class MyApp extends StatefulWidget {
-  const MyApp();
-
-  @override
-  State<MyApp> createState() => _MyAppState();
-}
-
-class _MyAppState extends State<MyApp> {
+class W1D1_layout extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // double width = MediaQuery.of(context).size.width;
-    // double height = MediaQuery.of(context).size.height;
-    // print('width:$width and height:$height');
     return MaterialApp(
-        home: Scaffold(
-      appBar: AppBar(
-        title: const Text('Layout widgets 1'),
-      ),
-      body: Column(children: [
-        Row(
-          // ignore: prefer_const_literals_to_create_immutables
-          children: [
-            const Text('1'),
-            Expanded(child: Container()),
-            const Text('3'),
-          ],
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        appBar: AppBar(
+          title: Center(
+              child: Text(
+            'Simple Layout Example',
+          )),
         ),
-        const Expanded(
-            child: Center(
-          child: TextButton(
-            onPressed: null,
-            child: Text('5'),
+        body: Padding(
+          padding: EdgeInsets.all(16.0),
+          child: SingleChildScrollView(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  'Hello, Flutter!',
+                  style: TextStyle(
+                    fontSize: 24.0,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                SizedBox(height: 20.0),
+                Container(
+                  width: 200,
+                  height: 200,
+                  color: Colors.blue,
+                  child: Center(
+                    child: Text(
+                      'Container',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 18.0,
+                      ),
+                    ),
+                  ),
+                ),
+                SizedBox(height: 20.0),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Icon(
+                      Icons.star,
+                      color: Colors.yellow,
+                      size: 50.0,
+                    ),
+                    Icon(
+                      Icons.star,
+                      color: Colors.yellow,
+                      size: 50.0,
+                    ),
+                    Icon(
+                      Icons.star,
+                      color: Colors.yellow,
+                      size: 50.0,
+                    ),
+                  ],
+                ),
+                SizedBox(height: 20.0),
+                Image.network(
+                    'https://t4.ftcdn.net/jpg/05/62/99/31/360_F_562993122_e7pGkeY8yMfXJcRmclsoIjtOoVDDgIlh.jpg'),
+              ],
+            ),
           ),
-        ))
-      ]),
-    ));
+        ),
+      ),
+    );
   }
 }
