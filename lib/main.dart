@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/gitanjali/stack_widget.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 void main() {
@@ -10,6 +11,6 @@ void main() {
 //     ),
 //   );
 // //## note -without river pod using uncomment it
-  runApp(ProviderScope(child: Table2 ()));
+  runApp(ProviderScope(child: StackWidget()));
 //  runApp(MultipleContoner());
 }
