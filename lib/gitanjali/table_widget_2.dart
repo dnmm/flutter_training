@@ -136,13 +136,13 @@ class Table2 extends StatelessWidget {
                     child: Container(
                       padding: EdgeInsets.all(8.0),
                       child: Text(
-                          'Name djhbjhbchbcxjnxcnbncxbnmcxbmnxcbncxbnxcbxncncxcnncxbxcbn'),
+                          'Name'),
                     ),
                   ),
                   TableCell(
                     child: Container(
                       padding: EdgeInsets.all(8.0),
-                      child: Text('Details'),
+                      child: Text('Details '),
                     ),
                   ),
                 ],
@@ -169,7 +169,7 @@ class Table2 extends StatelessWidget {
                   TableCell(
                     child: Container(
                       padding: EdgeInsets.all(8.0),
-                      child: Text('Jane Smith'),
+                      child: Text('Jane jshbjhbdhjbdchjbsdjhnzbncxb nzbnmbzxmnbmnxzbmnzxbnmxbnbxzmnbxznbnxzbmnzxbnxzbnmxzbnmxnxcbnmzbmnxcmnxzbnmxbznbxznmbzxnmbxznmbzxnbjdshbdnbcnxz Smith'),
                     ),
                   ),
                   TableCell(
