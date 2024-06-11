@@ -17,7 +17,9 @@ class W8D4ThemesInFlutter extends StatelessWidget {
           secondary: Colors.pink[100],
         ),
         textTheme: TextTheme(
+          // ignore: deprecated_member_use
           bodyText1: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold),
+          // ignore: deprecated_member_use
           bodyText2: TextStyle(fontSize: 16.0, color: Colors.grey),
         ),
         buttonTheme: ButtonThemeData(
