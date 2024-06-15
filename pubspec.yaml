@@ -29,6 +29,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  fluttertoast: ^8.0.8
+  cached_network_image: ^3.2.0
   cupertino_icons: ^1.0.2
   stream_chat_flutter: ^3.4.0
   pdf: ^3.7.1
@@ -49,6 +51,7 @@ dependencies:
   flutter_signin_button: ^2.0.0
   camera: ^0.10.0+1
   path: ^1.8.1
+  speech_to_text: ^6.6.0
   #pay: ^1.0.8
 
 dev_dependencies:
