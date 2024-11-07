@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/2023_new_training/class1/put_multiple_number_on_screen.dart';
+import 'package:flutter_application_1/gitanjali/my_extra_activity/home_page.dart';
+import 'package:flutter_application_1/gitanjali/navigation/home_page.dart';
 
 void main() {
   runApp(MyLoginPageProfessional());
@@ -9,7 +12,7 @@ class MyLoginPageProfessional extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Login Page',
+      title: 'Food Delivery App',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
@@ -28,88 +31,83 @@ class _LoginPageState extends State<LoginPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.black87,
-        // title: Text('Login Page'),
+        backgroundColor: Colors.blue,
+        title: Text("Get Started"),
       ),
-      body: Stack(
-        fit: StackFit.expand,
-        children: <Widget>[
-          Container(
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: NetworkImage(
-                  'https://as1.ftcdn.net/v2/jpg/02/63/49/52/1000_F_263495226_AC4pEAJnmRHDm72WI03nEJ9dZOlSMo2N.jpg',
-                ),
-                fit: BoxFit.cover,
+      body: _buildStackView(context),
+    );
+  }
+
+  Stack _buildStackView(BuildContext context) {
+    return Stack(
+      fit: StackFit.expand,
+      children: <Widget>[
+        Container(
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: NetworkImage(
+                'https://as1.ftcdn.net/v2/jpg/02/63/49/52/1000_F_263495226_AC4pEAJnmRHDm72WI03nEJ9dZOlSMo2N.jpg',
               ),
+              fit: BoxFit.cover,
             ),
           ),
-          Positioned(
-            bottom: 80, // Adjust the bottom position here
-            left: 20,
-            right: 20,
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [
-                Text(
-                  'Yummies !',
-                  style: TextStyle(
-                    fontSize: 40,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.red,
-                    fontStyle: FontStyle.italic,
-                  ),
-                  textAlign: TextAlign.center,
+        ),
+        Positioned(
+          bottom: 80,
+          left: 20,
+          right: 20,
+          child: Column(
+            children: [
+              Text(
+                'Yummies!',
+                style: TextStyle(
+                  fontSize: 40,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.red,
+                  fontStyle: FontStyle.italic,
                 ),
-                SizedBox(height: 10),
-                Text(
-                  'Tasty meals delivered to',
-                  style: TextStyle(
-                    fontSize: 25,
-                    color: Colors.black,
-                    fontWeight: FontWeight.bold,
-                  ),
-                  textAlign: TextAlign.center,
+                textAlign: TextAlign.center,
+              ),
+              SizedBox(height: 10),
+              Text(
+                'Tasty meals delivered to',
+                style: TextStyle(
+                  fontSize: 25,
+                  color: Colors.black,
+                  fontWeight: FontWeight.bold,
                 ),
-                SizedBox(height: 10),
-                Text(
-                  'your doorstep',
-                  style: TextStyle(
-                    fontSize: 25,
-                    color: Colors.black,
-                    fontWeight: FontWeight.bold,
-                  ),
-                  textAlign: TextAlign.center,
+                textAlign: TextAlign.center,
+              ),
+              SizedBox(height: 10),
+              Text(
+                'your doorstep',
+                style: TextStyle(
+                  fontSize: 25,
+                  color: Colors.black,
+                  fontWeight: FontWeight.bold,
                 ),
-                SizedBox(height: 20),
-                ElevatedButton(
-                  onPressed: () {
-                    // Navigate to the next page
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => WelcomePage()),
-                    );
-                  },
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor:
-                        Colors.blue, // Set background color to blue
-                    // Reduce padding to make button smaller
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(8),
-                    ),
-                  ),
-                  child: Text(
-                    'Get Started',
-                    style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 16), // Adjust font size if needed
-                  ),
+                textAlign: TextAlign.center,
+              ),
+              SizedBox(height: 20.0),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => WelcomePage()),
+                  );
+                },
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.blue,
                 ),
-              ],
-            ),
+                child: Text(
+                  'Get Started',
+                  style: TextStyle(color: Colors.white, fontSize: 16),
+                ),
+              ),
+            ],
           ),
-        ],
-      ),
+        ),
+      ],
     );
   }
 }
@@ -119,7 +117,8 @@ class WelcomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Welcome'),
+        title: Text('Welcome Page'),
+        backgroundColor: Colors.blue,
       ),
       body: Center(
         child: Padding(
@@ -151,6 +150,22 @@ class WelcomePage extends StatelessWidget {
                 'We are glad to have you here. Enjoy exploring the app!',
                 style: TextStyle(fontSize: 18),
                 textAlign: TextAlign.center,
+              ),
+              SizedBox(height: 20.0),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => HomePage50()),
+                  );
+                },
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.blue,
+                ),
+                child: Text(
+                  'Go to Home Page',
+                  style: TextStyle(color: Colors.white, fontSize: 16),
+                ),
               ),
             ],
           ),
