@@ -52,11 +52,11 @@ class _LoginPageState extends State<LoginPage> {
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
                 Text(
-                  'Yummies',
+                  'Yummies !',
                   style: TextStyle(
                     fontSize: 40,
                     fontWeight: FontWeight.bold,
-                    color: Colors.black,
+                    color: Colors.red,
                     fontStyle: FontStyle.italic,
                   ),
                   textAlign: TextAlign.center,
@@ -84,19 +84,25 @@ class _LoginPageState extends State<LoginPage> {
                 SizedBox(height: 20),
                 ElevatedButton(
                   onPressed: () {
-                    // Navigate to the Welcome Page
+                    // Navigate to the next page
                     Navigator.push(
                       context,
                       MaterialPageRoute(builder: (context) => WelcomePage()),
                     );
                   },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Color.fromARGB(255, 244, 54, 54),
-                    padding: EdgeInsets.symmetric(vertical: 10, horizontal: 30),
+                    backgroundColor:
+                        Colors.blue, // Set background color to blue
+                    // Reduce padding to make button smaller
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(8),
+                    ),
                   ),
                   child: Text(
                     'Get Started',
-                    style: TextStyle(fontSize: 20, color: Colors.white),
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 16), // Adjust font size if needed
                   ),
                 ),
               ],
