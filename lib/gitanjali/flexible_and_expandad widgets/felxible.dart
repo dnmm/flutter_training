@@ -5,7 +5,7 @@ void main() {
 }
 
 class FlexibleWidgets extends StatelessWidget {
-  //@override
+  @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
